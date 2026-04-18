@@ -38,3 +38,6 @@
 [submodule "essay"]
 	path = app/data/rime/essay
 	url = https://github.com/rime/rime-essay
+[submodule "app/data/rime/wubi091"]
+	path = app/data/rime/wubi091
+	url = https://github.com/sansan09527/rime-wubi091-dianer.git
