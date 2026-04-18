@@ -1,0 +1,59 @@
+name: Sync Upstream
+
+on:
+  schedule:
+    # 每天 UTC 8:00（北京时间 16:00）检查一次
+    - cron: '0 8 * * *'
+  workflow_dispatch: # 支持手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v6
+        with:
+          ref: develop
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Add upstream remote
+        run: |
+          git remote add upstream https://github.com/osfans/trime.git
+          git fetch upstream develop
+
+      - name: Check for new commits
+        id: check
+        run: |
+          BEHIND=$(git rev-list --count HEAD..upstream/develop)
+          echo "behind=$BEHIND" >> $GITHUB_OUTPUT
+          echo "Upstream is $BEHIND commits ahead"
+
+      - name: Merge upstream (keep our changes on conflict)
+        if: steps.check.outputs.behind != '0'
+        run: |
+          # 合并上游，冲突时保留我们的版本（091词库相关文件）
+          git merge upstream/develop --no-edit \
+            -X ours \
+            -m "chore: sync upstream trime $(git rev-parse --short upstream/develop)" || {
+            echo "Merge conflict detected, resolving..."
+            # 确保我们的 091 文件不被覆盖
+            git checkout --ours \
+              app/src/main/assets/shared/wubi091.dict.yaml \
+              app/src/main/assets/shared/wubi091.extended.dict.yaml \
+              app/src/main/assets/shared/wubi091.schema.yaml \
+              app/src/main/java/com/osfans/trime/data/base/DataManager.kt \
+              .gitmodules \
+              2>/dev/null || true
+            git add -A
+            git commit --no-edit -m "chore: sync upstream trime (resolved conflicts, kept 091 wubi)"
+          }
+
+      - name: Push
+        if: steps.check.outputs.behind != '0'
+        run: git push origin develop
