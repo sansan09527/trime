@@ -14,7 +14,7 @@ jobs:
     env:
       BUILD_ABI: armeabi-v7a,arm64-v8a,x86,x86_64
     steps:
-      - name: Checkout
+      - name: Fetch source code
         uses: actions/checkout@v6
         with:
           submodules: recursive
@@ -46,8 +46,14 @@ jobs:
           path: "app/prebuilt"
           key: ${{ runner.os }}-trime-jni-debug-${{ steps.cache-hash.outputs.native-cache-hash }}
 
-      - name: Build debug APK
-        run: make debug
+      - name: Fetch submodules
+        if: ${{ !steps.jni-cache.outputs.cache-hit }}
+        run: |
+          git submodule update --init --recursive
+
+      - name: Build debug Trime
+        run: |
+          make debug
 
       - name: Add JNI cache
         if: ${{ !steps.jni-cache.outputs.cache-hit }}
