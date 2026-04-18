@@ -1,0 +1,75 @@
+name: Release 091五笔
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: '版本号 (如 v1.0.0)'
+        required: true
+        default: 'v1.0.0'
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    env:
+      BUILD_ABI: armeabi-v7a,arm64-v8a,x86,x86_64
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: "temurin"
+          java-version: 17
+          cache: 'gradle'
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v4
+
+      - name: Install Android NDK
+        run: |
+          sdkmanager --install "cmake;3.31.6"
+
+      - name: Calculate JNI cache hash
+        id: cache-hash
+        run: |
+          ./gradlew :app:calculateNativeCacheHash
+
+      - name: Fetch JNI cache
+        uses: actions/cache@v5
+        id: jni-cache
+        with:
+          path: "app/prebuilt"
+          key: ${{ runner.os }}-trime-jni-debug-${{ steps.cache-hash.outputs.native-cache-hash }}
+
+      - name: Build debug APK
+        run: make debug
+
+      - name: Add JNI cache
+        if: ${{ !steps.jni-cache.outputs.cache-hit }}
+        run: cp -R app/build/intermediates/merged_native_libs/debug/mergeDebugNativeLibs/out/lib app/prebuilt
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ github.event.inputs.tag }}
+          name: "Trime 091五笔 ${{ github.event.inputs.tag }}"
+          artifacts: "app/build/outputs/apk/debug/*.apk"
+          body: |
+            ## Trime + 091五笔（点儿词库2026春）
+
+            内置091五笔输入方案，安装即用，无需手动导入词库。
+
+            - 词条数：222,207（含 3,757 条 z 词条）
+            - 词库来源：点儿词库2026春
+            - 基于 [osfans/trime](https://github.com/osfans/trime)
+
+            ### 下载说明
+            - `arm64-v8a`：大多数现代安卓手机
+            - `armeabi-v7a`：老款安卓手机
+            - `x86_64` / `x86`：模拟器
+          token: ${{ secrets.GITHUB_TOKEN }}
