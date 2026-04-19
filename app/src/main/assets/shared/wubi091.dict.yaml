@@ -816,19 +816,19 @@ AC数	acov	784
 芭乐	acqi	795
 功能键	acqv	796
 Acrobat	acr	797
-Acrobat%20Pro%20DC	acr	798
-Acrobat%20DC	acr	799
-Acrobat%20Pro%20DC	acrc	800
-Acrobat%20DC	acrc	801
-Acrobat%20Pro%20DC	acrd	802
-Acrobat%20DC	acrd	803
+Acrobat Pro DC	acr	798
+Acrobat DC	acr	799
+Acrobat Pro DC	acrc	800
+Acrobat DC	acrc	801
+Acrobat Pro DC	acrd	802
+Acrobat DC	acrd	803
 茅盾	acrf	804
 Acrobat	acro	805
-Acrobat%20Pro%20DC	acro	806
-Acrobat%20DC	acro	807
-Acrobat%20Pro	acrp	808
-Acrobat%20Reader	acrr	809
-Acrobat%20Reader%20DC	acrr	810
+Acrobat Pro DC	acro	806
+Acrobat DC	acro	807
+Acrobat Pro	acrp	808
+Acrobat Reader	acrr	809
+Acrobat Reader DC	acrr	810
 Acrobat	acrt	811
 蓣	acs	812
 功能机	acs	813
@@ -1447,7 +1447,7 @@ AE特效	aeku	1425
 莻	aekx	1426
 Ae	ael	1427
 AE	ael	1428
-After%20Effects	ael	1429
+After Effects	ael	1429
 藤野	aela	1430
 薶	aela	1431
 荡气回肠	aele	1432
@@ -1746,12 +1746,12 @@ A教	afb	1657
 鞭毛	afen	1725
 甘受	afep	1726
 荷塘月色	afeq	1727
-a%20few%20moments%20later	afer	1728
+a few moments later	afer	1728
 蒖	afeu	1729
 鞭腿	afev	1730
 鞖	afev	1731
 鞱	afev	1732
-a%20few%20moments%20later	afew	1733
+a few moments later	afew	1733
 敬老爱幼	afex	1734
 鞋	aff	1735
 莫过于	aff	1736
@@ -1772,7 +1772,7 @@ a%20few%20moments%20later	afew	1733
 黄土地	affb	1751
 蕓	affc	1752
 鞋城	affd	1753
-Affinity%20Designer	affd	1754
+Affinity Designer	affd	1754
 蓬勃朝气	affe	1755
 葑	afff	1756
 芏	afff	1757
@@ -1785,7 +1785,7 @@ Affinity%20Designer	affd	1754
 莫过于	affh	1764
 靬	affh	1765
 䩒	affh	1766
-Affinity%20Photo	affi	1767
+Affinity Photo	affi	1767
 Affinity	affi	1768
 匠士雨五笔输入法	affi	1769
 著者	affj	1770
@@ -1795,10 +1795,10 @@ Affinity	affi	1768
 某款	affl	1774
 甘南	affm	1775
 苇塘	affo	1776
-Affinity%20Photo	affo	1777
+Affinity Photo	affo	1777
 勒索	affp	1778
-Affinity%20Photo	affp	1779
-Affinity%20Publisher	affp	1780
+Affinity Photo	affp	1779
+Affinity Publisher	affp	1780
 韃	affp	1781
 蕘	affq	1782
 甘霖	affs	1783
@@ -1966,7 +1966,7 @@ Affinity	affy	1792
 鞋帽	afmh	1945
 某市	afmi	1946
 䪎	afmk	1947
-a%20few%20moments%20later	afml	1948
+a few moments later	afml	1948
 鞍山	afmm	1949
 䩺	afmn	1950
 爇	afmo	1951
@@ -2136,14 +2136,14 @@ a%20few%20moments%20later	afml	1948
 甘醇	afsy	2115
 劳动生产率	afsy	2116
 英吉利	aft	2117
-After%20Effects	aft	2118
+After Effects	aft	2118
 鞒	aft	2119
 䓔	aftb	2120
 鞭笞	aftc	2121
 甘甜	aftd	2122
 鞋舌	aftd	2123
 甛	aftd	2124
-After%20Effects	afte	2125
+After Effects	afte	2125
 鞞	aftf	2126
 某处	afth	2127
 蓬勃向上	afth	2128
@@ -2161,7 +2161,7 @@ After%20Effects	afte	2125
 䩥	aftp	2140
 䩼	aftp	2141
 著称	aftq	2142
-After%20Effects	afts	2143
+After Effects	afts	2143
 鞂	afty	2144
 东直门	afu	2145
 蔷	afu	2146
@@ -2284,7 +2284,7 @@ After%20Effects	afts	2143
 勒诈	afyl	2263
 某词	afyn	2264
 某讯	afyn	2265
-恭喜这个B%20站用户	afyo	2266
+恭喜这个B 站用户	afyo	2266
 䪃	afyt	2267
 或者说	afyu	2268
 䩙	afyx	2269
@@ -3522,11 +3522,11 @@ AI换脸	aire	3498
 东岳	airg	3501
 AirTag	airg	3502
 䓅	airj	3503
-AirPods%20Max	airm	3504
+AirPods Max	airm	3504
 东扩	airo	3505
-AirPods%20Pro	airo	3506
+AirPods Pro	airo	3506
 AirPods	airp	3507
-AirPods%20Pro	airp	3508
+AirPods Pro	airp	3508
 AirDrop	airp	3509
 AirPower	airp	3510
 AirPod	airp	3511
@@ -3538,7 +3538,7 @@ AirPods	airs	3516
 AirTag	airt	3517
 黄油手	airt	3518
 莎拉	airu	3519
-AirPods%20Max	airx	3520
+AirPods Max	airx	3520
 共济失调	airy	3521
 欧洲杯	ais	3522
 荧光棒	ais	3523
@@ -4959,7 +4959,7 @@ AMD	amd	4903
 🦕	amdx	4938
 🦖	amdx	4939
 共同愿望	amdy	4940
-Adobe%20Media%20Encoder	ame	4941
+Adobe Media Encoder	ame	4941
 巩膜	amea	4942
 蓊郁	ameb	4943
 蓇	amef	4944
@@ -6115,42 +6115,42 @@ Apple	app	6093
 apple.com.cn	app	6094
 AppleCare+	appc	6095
 AppleCare	appc	6096
-Apple%20Music	appc	6097
-Apple%20ID	appd	6098
-App%20Store	appe	6099
-Apple%20Store	appe	6100
-Apple%20Watch%20SE	appe	6101
-Apple%20One	appe	6102
+Apple Music	appc	6097
+Apple ID	appd	6098
+App Store	appe	6099
+Apple Store	appe	6100
+Apple Watch SE	appe	6101
+Apple One	appe	6102
 东方之珠	appg	6103
 营养实惠	appg	6104
-Apple%20Watch	apph	6105
-Apple%20ID	appi	6106
+Apple Watch	apph	6105
+Apple ID	appi	6106
 营寨	appi	6107
 营养	appj	6108
-Apple%20Park	appk	6109
-Apple%20Pencil	appl	6110
+Apple Park	appk	6109
+Apple Pencil	appl	6110
 劳军	appl	6111
-Apple%20Music	appm	6112
+Apple Music	appm	6112
 蒙羞	appn	6113
 App内购买	appn	6114
-Apple%20Silicon	appn	6115
+Apple Silicon	appn	6115
 App资源库	appo	6116
-Apple%20One	appo	6117
-Apple%20Pencil	appp	6118
-Apple%20Pay	appp	6119
-Apple%20Park	appp	6120
+Apple One	appo	6117
+Apple Pencil	appp	6118
+Apple Pay	appp	6119
+Apple Park	appp	6120
 蒙冤	appq	6121
 app键	appq	6122
-App%20Store	apps	6123
-Apple%20Store	apps	6124
-Apple%20Watch%20Series	apps	6125
-Apple%20Silicon	apps	6126
+App Store	apps	6123
+Apple Store	apps	6124
+Apple Watch Series	apps	6125
+Apple Silicon	apps	6126
 蒙族	appt	6127
-Apple%20TV	appt	6128
-Apple%20TV	appv	6129
+Apple TV	appt	6128
+Apple TV	appv	6129
 芳容	appw	6130
-Apple%20Watch	appw	6131
-Apple%20Pay	appy	6132
+Apple Watch	appw	6131
+Apple Pay	appy	6132
 藏羚羊	appy	6133
 莺	apq	6134
 黄褐色	apq	6135
@@ -6728,8 +6728,8 @@ Apple%20Pay	appy	6132
 欧服	areb	6707
 区县	arec	6708
 欧朋	aree	6709
-Are%20you%20OK	arek	6710
-Are%20you%20OK？	arek	6711
+Are you OK	arek	6710
+Are you OK？	arek	6711
 蒙牛乳业	areo	6712
 蘤	areo	6713
 匠气	aret	6714
@@ -8575,13 +8575,13 @@ awesome	awee	8196
 花招	awrv	8554
 革命年代	awrw	8555
 荷	aws	8556
-Apple%20Watch%20Series	aws	8557
+Apple Watch Series	aws	8557
 著作权	aws	8558
 茶树	awsc	8559
 著作权	awsc	8560
 花棒	awsd	8561
 花期	awse	8562
-Apple%20Watch%20SE	awse	8563
+Apple Watch SE	awse	8563
 花枝	awsf	8564
 革命根据地	awsf	8565
 茶杯	awsg	8566
@@ -9101,8 +9101,8 @@ A级车	axlg	8837
 荒废	ayo	9080
 荒唐	ayo	9081
 荒庄	ayof	9082
-Are%20you%20OK	ayok	9083
-Are%20you%20OK？	ayok	9084
+Are you OK	ayok	9083
+Are you OK？	ayok	9084
 荒废	ayov	9085
 荒唐	ayov	9086
 葶	ayp	9087
@@ -9964,17 +9964,17 @@ BDSM	bdsm	9892
 也有	be	9943
 🌥	be	9944
 堕落	bea	9945
-The%20Beatles	bea	9946
+The Beatles	bea	9946
 阴茎	beac	9947
 孤胆英雄	bead	9948
 堕落	beai	9949
 隱	beai	9950
 阴功	beal	9951
 随葬	beaq	9952
-The%20Beatles	beas	9953
+The Beatles	beas	9953
 檃	beas	9954
 櫽	beas	9955
-The%20Beatles	beat	9956
+The Beatles	beat	9956
 阴蒂	beau	9957
 阻隔	beb	9958
 阴险	beb	9959
@@ -10203,7 +10203,7 @@ Beta	bet	10133
 随缘	bexx	10182
 也有词	bey	10183
 Beyond	bey	10184
-Beyond%20Compare	bey	10185
+Beyond Compare	bey	10185
 阴谋	beya	10186
 🌚	beya	10187
 随记	beyn	10188
@@ -11022,8 +11022,8 @@ Big5	bigg	10996
 巹	bign	11001
 烝	bigo	11002
 孤注一掷	bigr	11003
-Big%20Sur	bigr	11004
-Big%20Sur	bigs	11005
+Big Sur	bigr	11004
+Big Sur	bigs	11005
 BigTable	bigt	11006
 也觉得	bih	11007
 陈省身	bih	11008
@@ -12207,8 +12207,8 @@ BMW	bmw	11988
 孟庭苇	boaf	12186
 阻断药	boax	12187
 耿耿	bob	12188
-Bob%20Dylan	bobd	12189
-Bob%20Dylan	bobn	12190
+Bob Dylan	bobd	12189
+Bob Dylan	bobn	12190
 耿耿	bobo	12191
 防火防盗防闺蜜	bobp	12192
 职业院校	bobs	12193
@@ -12260,12 +12260,12 @@ Bonjour	bonr	12237
 Boolean	boo	12239
 boolean	boo	12240
 Bootstrap	boo	12241
-Boot%20Camp	booc	12242
+Boot Camp	booc	12242
 Bool	bool	12243
 Boolean	bool	12244
 boolean	bool	12245
 职业精神	booo	12246
-Boot%20Camp	boop	12247
+Boot Camp	boop	12247
 Bootstrap	boop	12248
 Bootstrap	boot	12249
 㷦	boou	12250
@@ -14543,15 +14543,15 @@ Ctrl+Alt+	cal	14515
 戏路	calo	14522
 双黄连	calp	14523
 马鞍山	cam	14524
-Camtasia%20Studio	cam	14525
+Camtasia Studio	cam	14525
 戏曲	cama	14526
 劲曲	cama	14527
-Camera%20Connect	camc	14528
+Camera Connect	camc	14528
 戏骨	came	14529
 马鞍山市	camm	14530
 马鞍山	camm	14531
 劲风	camr	14532
-Camera%20Connect	camt	14533
+Camera Connect	camt	14533
 艰巨性	can	14534
 鲽	can	14535
 戏剧	cand	14536
@@ -16612,8 +16612,8 @@ CIA	cia	16518
 柔光屏	cin	16591
 观赏性	cin	16592
 Cinder	cind	16593
-Cinema%204D	cind	16594
-Cinema%204D	cine	16595
+Cinema 4D	cind	16594
+Cinema 4D	cine	16595
 对流层	cinf	16596
 通常情况下	cing	16597
 鱼水情	cing	16598
@@ -18917,12 +18917,12 @@ CloudRAN	cran	18873
 难耐	crdm	18896
 巴拉克	crdq	18897
 难受	cre	18898
-Creative%20Cloud	cre	18899
+Creative Cloud	cre	18899
 🤕	cre	18900
 😣	cre	18901
-Creative%20Cloud	crea	18902
-Creative%20Cloud	crec	18903
-Creative%20Cloud	cred	18904
+Creative Cloud	crea	18902
+Creative Cloud	crec	18903
+Creative Cloud	cred	18904
 难有	creg	18905
 难觅	crem	18906
 驳船	crem	18907
@@ -20451,8 +20451,8 @@ C语言	cyyd	20370
 克勤克俭	dadw	20430
 砸碎	dady	20431
 左腿	dae	20432
-DAEMON%20Tools	dae	20433
-Daemon%20Tools	dae	20434
+DAEMON Tools	dae	20433
+Daemon Tools	dae	20434
 大功告成	daed	20435
 左脚	daef	20436
 礡	daef	20437
@@ -20462,10 +20462,10 @@ Daemon%20Tools	dae	20434
 遀	daep	20441
 左胸	daeq	20442
 左膝	daes	20443
-DAEMON%20Tools	daes	20444
-Daemon%20Tools	daes	20445
-DAEMON%20Tools	daet	20446
-Daemon%20Tools	daet	20447
+DAEMON Tools	daes	20444
+Daemon Tools	daes	20445
+DAEMON Tools	daet	20446
+Daemon Tools	daet	20447
 䃟	daet	20448
 面黄肌瘦	daeu	20449
 左腿	daev	20450
@@ -20585,7 +20585,7 @@ D&G	dag	20469
 左臂	dank	20564
 左翼	danl	20565
 春节快乐	danq	20566
-Happy%20Chinese%20New%20Year	danq	20567
+Happy Chinese New Year	danq	20567
 耐药性	dans	20568
 百世快递	danu	20569
 大药房	dao	20570
@@ -20718,11 +20718,11 @@ Data	data	20648
 成功率	day	20697
 大功率	day	20698
 硭	day	20699
-Days%20Matter	daym	20700
+Days Matter	daym	20700
 砌词	dayn	20701
 百花齐放	dayp	20702
-Days%20Matter	dayr	20703
-Days%20Matter	days	20704
+Days Matter	dayr	20703
+Days Matter	days	20704
 奇葩说	dayu	20705
 成功率	dayx	20706
 大功率	dayx	20707
@@ -21595,7 +21595,7 @@ D面	ddm	21551
 大肉	ddmw	21574
 大内	ddmw	21575
 套内	ddmw	21576
-3d%20Max	ddmx	21577
+3d Max	ddmx	21577
 大凡	ddmy	21578
 压压惊	ddn	21579
 帮帮忙	ddn	21580
@@ -21785,13 +21785,13 @@ DDR4	ddrl	21714
 夸大其辞	ddst	21764
 大校	ddsu	21765
 大概	ddsv	21766
-3ds%20Max	ddsx	21767
+3ds Max	ddsx	21767
 大楷	ddsx	21768
 夸夸其谈	ddsy	21769
 大醉	ddsy	21770
 夸大其词	ddsy	21771
 大笑	ddt	21772
-3D%20Touch	ddt	21773
+3D Touch	ddt	21773
 大面积	ddt	21774
 🤣	ddt	21775
 飙升	ddta	21776
@@ -21801,7 +21801,7 @@ DDR4	ddrl	21714
 大笔	ddte	21780
 大秀	ddte	21781
 大千	ddtf	21782
-3D%20Touch	ddth	21783
+3D Touch	ddth	21783
 礰	ddth	21784
 大条	ddti	21785
 左右逢源	ddti	21786
@@ -36272,13 +36272,13 @@ EverNote	evee	36248
 Everything	eveg	36251
 艘船	evem	36252
 腿毛	even	36253
-Ever%20Play	evep	36254
+Ever Play	evep	36254
 Everything	ever	36255
 EverNote	ever	36256
 氯气	evet	36257
 妥妥	evev	36258
 有始有终	evex	36259
-Ever%20Play	evey	36260
+Ever Play	evey	36260
 妥	evf	36261
 舀	evf	36262
 爱好者	evf	36263
@@ -37230,13 +37230,13 @@ e充电	eyjn	36972
 塔防	fabp	37209
 二医院	fabp	37210
 Facebook	fac	37211
-Face%20ID	fac	37212
+Face ID	fac	37212
 雨花台	fac	37213
 雨花台区	faca	37214
 Faceu激萌	faca	37215
-Face%20ID	facd	37216
+Face ID	facd	37216
 Facebook	face	37217
-Face%20ID	face	37218
+Face ID	face	37218
 FaceTime	face	37219
 壹贰叁肆伍陆柒捌玖零	facf	37220
 塔台	fack	37221
@@ -37707,12 +37707,12 @@ FAT32	fat	37471
 过了很久	fbhq	37686
 FBI	fbi	37687
 无限小	fbi	37688
-FBI%20WARNING	fbi	37689
+FBI WARNING	fbi	37689
 嘉陵江	fbia	37690
 教学	fbib	37691
 䨡	fbib	37692
 教法	fbif	37693
-FBI%20WARNING	fbig	37694
+FBI WARNING	fbig	37694
 地波	fbih	37695
 无限小	fbih	37696
 地温	fbij	37697
@@ -37730,7 +37730,7 @@ FBI%20WARNING	fbig	37694
 地沟	fbiq	37709
 教派	fbir	37710
 地滚	fbiu	37711
-FBI%20WARNING	fbiw	37712
+FBI WARNING	fbiw	37712
 教师	fbj	37713
 无限量	fbj	37714
 南联盟	fbj	37715
@@ -38277,7 +38277,7 @@ FBI%20WARNING	fbiw	37712
 支座	fcow	38256
 运粮	fcoy	38257
 运	fcp	38258
-Final%20Cut%20Pro	fcp	38259
+Final Cut Pro	fcp	38259
 朝鲜族	fcp	38260
 支农	fcpe	38261
 动能定理	fcpg	38262
@@ -38290,7 +38290,7 @@ Final%20Cut%20Pro	fcp	38259
 埃安	fcpv	38269
 劫案	fcpv	38270
 动容	fcpw	38271
-Final%20Cut%20Pro%20X	fcpx	38272
+Final Cut Pro X	fcpx	38272
 FCPX	fcpx	38273
 喜欢我	fcq	38274
 才能够	fcq	38275
@@ -41194,7 +41194,7 @@ Faceu激萌	fiaj	41135
 未予	fics	41173
 无法预知	fict	41174
 无法预计	ficy	41175
-Face%20ID	fid	41176
+Face ID	fid	41176
 嫠	fid	41177
 求码	fidc	41178
 无法左右	fidd	41179
@@ -42457,7 +42457,7 @@ FLAC	flac	42433
 增项	flad	42436
 flag	flag	42437
 露营	flap	42438
-Flash%20Player	flap	42439
+Flash Player	flap	42439
 🏕	flap	42440
 埋葬	flaq	42441
 协警	flaq	42442
@@ -43997,30 +43997,30 @@ foobar2000	foob	43946
 过度解读	foqy	43976
 无数的	for	43977
 幸福的	for	43978
-for%20Android	fora	43979
+for Android	fora	43979
 专业技能	forc	43980
-for%20Mac	forc	43981
+for Mac	forc	43981
 老鹰捉小鸡	forc	43982
 老鹰抓小鸡	forc	43983
-for%20Android	ford	43984
+for Android	ford	43984
 foreach	fore	43985
 无精打采	fore	43986
 幸福的家庭都是相似的，不幸的家庭各有各的不幸	forf	43987
 for循环	forg	43988
 foreach	forh	43989
-for%20iOS	fori	43990
+for iOS	fori	43990
 救火扬沸	fori	43991
-for%20Mac	form	43992
+for Mac	form	43992
 form	form	43993
 幸福指数	foro	43994
 幸福的	forq	43995
 无数的	forq	43996
 赫哲	forr	43997
-for%20Windows	fors	43998
-for%20iOS	fors	43999
+for Windows	fors	43998
+for iOS	fors	43999
 赤手	fort	44000
 赤热	forv	44001
-for%20Windows	forw	44002
+for Windows	forw	44002
 求神拜佛	forw	44003
 赤松	fos	44004
 封神榜	fos	44005
@@ -46399,8 +46399,8 @@ fuck	fuck	46377
 Fuck	fuck	46378
 騺	fuco	46379
 南北通透	fuct	46380
-Fuck%20you	fucu	46381
-Fuck%20you	fucy	46382
+Fuck you	fucu	46381
+Fuck you	fucy	46382
 幸存	fud	46383
 十六大	fud	46384
 南美大陆	fudb	46385
@@ -48443,11 +48443,11 @@ F组	fxe	47403
 青苹果	gal	48422
 Galaxy	gala	48423
 开恩	gald	48424
-Galaxy%20Fold	gald	48425
+Galaxy Fold	gald	48425
 开胃	gale	48426
 开团	galf	48427
 开园	galf	48428
-Galaxy%20Fold	galf	48429
+Galaxy Fold	galf	48429
 㿼	galf	48430
 开车	galg	48431
 开国	galg	48432
@@ -48463,7 +48463,7 @@ Galaxy%20Fold	galf	48429
 开示	galm	48442
 武力	galn	48443
 开路	galo	48444
-Galaxy%20Z%20Flip	galp	48445
+Galaxy Z Flip	galp	48445
 开罗	galq	48446
 青苹果	gals	48447
 一式四份	galw	48448
@@ -48480,10 +48480,10 @@ Galaxy	galy	48451
 开帖	gamh	48459
 开市	gami	48460
 开山	gamm	48461
-Game%20Over	gamo	48462
+Game Over	gamo	48462
 不区分大小写	gamp	48463
 王艺迪	gamp	48464
-Game%20Over	gamr	48465
+Game Over	gamr	48465
 五花八门	gamu	48466
 五花肉	gamw	48467
 璊	gamy	48468
@@ -50421,7 +50421,7 @@ G.E.M.邓紫棋	gems	50395
 一般见识	gemy	50400
 表情	gen	50401
 一般性	gen	50402
-Genius%20Bar	genb	50403
+Genius Bar	genb	50403
 静怡	genc	50404
 表尾	gene	50405
 表层	genf	50406
@@ -50430,7 +50430,7 @@ Genius%20Bar	genb	50403
 一脸懵逼	geng	50409
 静心	geni	50410
 还有心思	genl	50411
-Genius%20Bar	genr	50412
+Genius Bar	genr	50412
 一般性	gens	50413
 一般情况	genu	50414
 青翠	geny	50415
@@ -55873,7 +55873,7 @@ Gmail邮箱	gmat	55747
 一骨脑	gmey	55852
 不同于	gmf	55853
 正由于	gmf	55854
-give%20me%20five	gmf	55855
+give me five	gmf	55855
 两截	gmfa	55856
 不同地区	gmfa	55857
 天山雪莲	gmfa	55858
@@ -57074,14 +57074,14 @@ gNodeB	gnob	56625
 Google	goo	57053
 琰	goo	57054
 玉米糁子	goob	57055
-Google%20Chrome	gooc	57056
+Google Chrome	gooc	57056
 玉米糁	gooc	57057
 不麻烦	good	57058
 GoodNotes	good	57059
 GoodReader	good	57060
 Google	gooe	57061
-Google%20Chrome	gooe	57062
-Google%20Voice	gooe	57063
+Google Chrome	gooe	57062
+Google Voice	gooe	57063
 一遍遍地	goof	57064
 Google	goog	57065
 恶业	gooh	57066
@@ -57104,7 +57104,7 @@ GoodNotes	goos	57082
 玉米粒	goou	57083
 来料	goou	57084
 更糟糕	goou	57085
-Google%20Voice	goov	57086
+Google Voice	goov	57086
 亚麻	gooy	57087
 琰	gooy	57088
 㼆	gooy	57089
@@ -59874,12 +59874,12 @@ Gucci	guci	59817
 不首先使用核武器	guek	59853
 平盘	guel	59854
 天道有轮回	guel	59855
-Guest%20OS	gueo	59856
+Guest OS	gueo	59856
 璲	guep	59857
 平胸	gueq	59858
 平遥	guer	59859
 Guest	gues	59860
-Guest%20OS	gues	59861
+Guest OS	gues	59861
 Guest	guet	59862
 开卷有益	gueu	59863
 夹腿	guev	59864
@@ -62224,15 +62224,15 @@ O(∩_∩)O哈哈	hah	62137
 黑芝麻	haoy	62203
 瞒着	hap	62204
 矇	hap	62205
-Happy%20birthday	hapb	62206
+Happy birthday	hapb	62206
 饛	hape	62207
 瞒着	haph	62208
 墨菲定律	haph	62209
 微薄之力	hapl	62210
-Happy%20New%20Year	hapr	62211
+Happy New Year	hapr	62211
 餝	hapt	62212
-Happy%20birthday	hapy	62213
-Happy%20Valentine's%20Day	hapy	62214
+Happy birthday	hapy	62213
+Happy Valentine's Day	hapy	62214
 徔	hapy	62215
 很茫然	haq	62216
 瞒我	haq	62217
@@ -62537,7 +62537,7 @@ HTML+CSS	hcl	62504
 皮屑	hcni	62516
 皮书	hcnn	62517
 皮尺	hcny	62518
-Happy%20Chinese%20New%20Year	hcny	62519
+Happy Chinese New Year	hcny	62519
 颇为	hco	62520
 径庭	hco	62521
 皮炎	hcoo	62522
@@ -62942,13 +62942,13 @@ height	hei	62905
 黑胶唱片	hekt	62921
 Hello	hel	62922
 战胜国	hel	62923
-Hello%20World	held	62924
+Hello World	held	62924
 䂃	helf	62925
 战胜国	helg	62926
-Hello%20Kitty	helk	62927
+Hello Kitty	helk	62927
 饥肠辘辘	hell	62928
 Hello	helo	62929
-Hello%20Kitty	hely	62930
+Hello Kitty	hely	62930
 占有欲	hem	62931
 占用内存	hemd	62932
 饶有风趣	hemk	62933
@@ -65390,7 +65390,7 @@ Hive	hive	64625
 卤莽	hlad	65369
 卤菜	hlae	65370
 微软雅黑	hlah	65371
-Microsoft%20YaHei	hlah	65372
+Microsoft YaHei	hlah	65372
 行草	hlaj	65373
 行营	hlap	65374
 德国世界杯	hlas	65375
@@ -65660,7 +65660,7 @@ Microsoft%20YaHei	hlah	65372
 战略发展	hlvn	65639
 德国人	hlw	65640
 黑加仑	hlw	65641
-Hello%20World	hlwd	65642
+Hello World	hlwd	65642
 行会	hlwf	65643
 行使	hlwg	65644
 行伍	hlwg	65645
@@ -66192,7 +66192,7 @@ tiger-code.com	hmdc	65726
 身怀绝技	hnxr	66171
 此恨绵绵无绝期	hnxs	66172
 卢比	hnxx	66173
-Happy%20New%20Year	hny	66174
+Happy New Year	hny	66174
 饲育	hnyc	66175
 很快就能	hnyc	66176
 很快就来	hnyg	66177
@@ -66415,9 +66415,9 @@ HomePod	homd	66392
 皮糙肉厚	homd	66394
 Home	home	66395
 黑市	homi	66396
-HomePod%20mini	homi	66397
+HomePod mini	homi	66397
 黑山	homm	66398
-HomePod%20mini	homm	66399
+HomePod mini	homm	66399
 🇲🇪	homm	66400
 HomePod	homp	66401
 虚岁	homq	66402
@@ -68423,7 +68423,7 @@ Hub	hub	68069
 很欢	hvcq	68402
 很难	hvcr	68403
 很大	hvd	68404
-Happy%20Valentine's%20Day	hvd	68405
+Happy Valentine's Day	hvd	68405
 瞎猫碰上死耗子	hvdb	68406
 很大	hvdd	68407
 眼压	hvdf	68408
@@ -70595,8 +70595,8 @@ iCloud	icl	70573
 汉L	icl	70574
 海马回	icl	70575
 iCloud	icld	70576
-iCloud%20Drive	icld	70577
-iCloud%20Drive	icle	70578
+iCloud Drive	icld	70577
+iCloud Drive	icle	70578
 治国	iclg	70579
 治罪	iclj	70580
 海马回	iclk	70581
@@ -71403,7 +71403,7 @@ IE浏览器	ieik	71324
 没有别的	iekr	71382
 没有中间商赚差价	iekw	71383
 没有办法	iel	71384
-Internet%20Explorer	iel	71385
+Internet Explorer	iel	71385
 活受罪	iel	71386
 没有界限	ielb	71387
 洗胃	iele	71388
@@ -75662,8 +75662,8 @@ iMac	imac	75630
 溅落	imai	75641
 㵹	imaj	75642
 灎	imal	75643
-iMac%20Pro	imao	75644
-iMac%20Pro	imap	75645
+iMac Pro	imao	75644
+iMac Pro	imap	75645
 省市区	imar	75646
 油区	imar	75647
 混账东西	imas	75648
@@ -76553,15 +76553,15 @@ Instagram	inst	76528
 满怀期望	insy	76532
 油性笔	int	76533
 Internet	int	76534
-Internet%20Explorer	int	76535
-IntelliJ%20IDEA	inta	76536
+Internet Explorer	int	76535
+IntelliJ IDEA	inta	76536
 深居简出	intb	76537
 湉	intd	76538
 油性笔	inte	76539
 intel	inte	76540
 IntelliJ	inte	76541
 漏算	inth	76542
-IntelliJ%20IDEA	inti	76543
+IntelliJ IDEA	inti	76543
 INTJ	intj	76544
 IntelliJ	intj	76545
 学习委员	intk	76546
@@ -76844,7 +76844,7 @@ iOS	ios	76818
 法度森严	iosg	76823
 小米椒	iosh	76824
 小康生活	iosi	76825
-iOS%2014	iosl	76826
+iOS 14	iosl	76826
 油烟机	iosm	76827
 洛斯	iosr	76828
 渡槽	ioss	76829
@@ -76959,7 +76959,7 @@ IP	ip	76937
 iPad	ipa	76938
 海军蓝	ipa	76939
 洋式	ipaa	76940
-iPad%20Air	ipaa	76941
+iPad Air	ipaa	76941
 深巷	ipab	76942
 浓荫	ipab	76943
 洋节	ipab	76944
@@ -76972,28 +76972,28 @@ iPad	ipad	76946
 溠	ipag	76951
 游荡	ipai	76952
 沉落	ipai	76953
-iPad%20mini	ipai	76954
+iPad mini	ipai	76954
 深蓝	ipaj	76955
 法定节假日	ipaj	76956
 法定工作日	ipaj	76957
 当家花旦	ipaj	76958
 海军蓝	ipaj	76959
 滘	ipak	76960
-iPadOS%2014	ipal	76961
+iPadOS 14	ipal	76961
 深黄	ipam	76962
-iPad%20mini	ipam	76963
+iPad mini	ipam	76963
 演艺	ipan	76964
 游艺	ipan	76965
 iPadOS	ipao	76966
-iPad%20Pro	ipao	76967
-iPad%20OS	ipao	76968
-iPad%20Pro	ipap	76969
+iPad Pro	ipao	76967
+iPad OS	ipao	76968
+iPad Pro	ipap	76969
 洋荤	ipap	76970
 洋葱	ipaq	76971
 🧅	ipaq	76972
-iPad%20Air	ipar	76973
+iPad Air	ipar	76973
 iPadOS	ipas	76974
-iPad%20OS	ipas	76975
+iPad OS	ipas	76975
 iPad版	ipat	76976
 游医	ipat	76977
 深切	ipav	76978
@@ -77157,48 +77157,48 @@ iPhone	iph	77133
 光着身子	iphb	77136
 漃	iphc	77137
 沉默	iphd	77138
-iPhone%2013	iphd	77139
+iPhone 13	iphd	77139
 iPhone	iphe	77140
-iPhone%20SE	iphe	77141
+iPhone SE	iphe	77141
 游街	iphf	77142
-iPhone%2012	iphf	77143
-iPhone%2015	iphg	77144
-iPhone%2011	iphg	77145
+iPhone 12	iphf	77143
+iPhone 15	iphg	77144
+iPhone 11	iphg	77145
 㴭	iphg	77146
 游目	iphh	77147
-iPhone%2013%20mini	iphi	77148
-iPhone%2012%20mini	iphi	77149
+iPhone 13 mini	iphi	77148
+iPhone 12 mini	iphi	77149
 深得	iphj	77150
 演得	iphj	77151
 学着点	iphk	77152
 游行	iphl	77153
 洋行	iphl	77154
-iPhone%2014	iphl	77155
-iPhone%2013%20mini	iphm	77156
-iPhone%2012%20mini	iphm	77157
+iPhone 14	iphl	77155
+iPhone 13 mini	iphm	77156
+iPhone 12 mini	iphm	77157
 沉默	ipho	77158
 深黑	ipho	77159
 浓黑	ipho	77160
-iPhone%20Pro	iphp	77161
-iPhone%2016%20Pro	iphp	77162
+iPhone Pro	iphp	77161
+iPhone 16 Pro	iphp	77162
 深壑	iphp	77163
 水族馆	iphp	77164
-iPhone%20XR	iphr	77165
-iPhone%20Plus	iphs	77166
-iPhone%2016%20Plus	iphs	77167
-iPhone%20XS	iphs	77168
-iPhone%20XS%20MAX	iphs	77169
+iPhone XR	iphr	77165
+iPhone Plus	iphs	77166
+iPhone 16 Plus	iphs	77167
+iPhone XS	iphs	77168
+iPhone XS MAX	iphs	77169
 沉睡	ipht	77170
 浑身	ipht	77171
 深睡	ipht	77172
 💤	ipht	77173
-iPhone%2016	iphu	77174
+iPhone 16	iphu	77174
 iPhone发布会	iphv	77175
 堂安律	iphv	77176
 iPhone发布会	iphw	77177
-iPhone%20Pro%20Max	iphx	77178
-iPhone%2016%20Pro%20Max	iphx	77179
-iPhone%20X	iphx	77180
+iPhone Pro Max	iphx	77178
+iPhone 16 Pro Max	iphx	77179
+iPhone X	iphx	77180
 深深	ipi	77181
 洗完澡	ipi	77182
 水帘洞	ipi	77183
@@ -77361,9 +77361,9 @@ iPod	ipo	77338
 浓度	ipoa	77340
 沉着应对	ipoc	77341
 iPod	ipod	77342
-iPod%20Touch	ipod	77343
+iPod Touch	ipod	77343
 浓精	ipog	77344
-iPod%20Touch	ipoh	77345
+iPod Touch	ipoh	77345
 淘宝店	ipoh	77346
 浓烟	ipol	77347
 洋烟	ipol	77348
@@ -77378,7 +77378,7 @@ iPod%20Touch	ipoh	77345
 洋炮	ipoq	77357
 辉煌	ipor	77358
 深为	ipot	77359
-iPod%20Touch	ipot	77360
+iPod Touch	ipot	77360
 深广	ipoy	77361
 深户	ipoy	77362
 汉字序顺并不定一影阅响读	ipoy	77363
@@ -77577,7 +77577,7 @@ IPv6	ipvu	77528
 当家作主	ipwy	77556
 当家做主	ipwy	77557
 沱	ipx	77558
-iPhone%20X	ipx	77559
+iPhone X	ipx	77559
 演练	ipxa	77560
 洋红	ipxa	77561
 深红	ipxa	77562
@@ -79529,7 +79529,7 @@ iTunes	itun	79507
 海盗	ituq	79508
 少将	ituq	79509
 🏴‍☠️	ituq	79510
-iTunes%20Store	itus	79511
+iTunes Store	itus	79511
 iTunes	itus	79512
 省道	itut	79513
 海产	itut	79514
@@ -87534,7 +87534,7 @@ json	json	86819
 螃	jup	87513
 时间差	jup	87514
 时间差	jupa	87515
-Jupyter%20Notebook	jupk	87516
+Jupyter Notebook	jupk	87516
 电装实习	jupn	87517
 螃	jupp	87518
 最关键	juq	87519
@@ -87570,7 +87570,7 @@ Jupyter%20Notebook	jupk	87516
 蝤	jusg	87549
 收效甚微	jush	87550
 时间机器	jusk	87551
-just%20so%20so	juso	87552
+just so so	juso	87552
 时间长	jut	87553
 时间短	jut	87554
 电冰箱	jut	87555
@@ -92458,7 +92458,7 @@ kindle	kind	91808
 叽叽喳喳	kkks	92437
 唧唧喳喳	kkks	92438
 哔哔赖赖	kkks	92439
-哔哩哔哩%20(゜-゜)つロ%20干杯	kkks	92440
+哔哩哔哩 (゜-゜)つロ 干杯	kkks	92440
 趮	kkks	92441
 口吃	kkkt	92442
 咋咋呼呼	kkkt	92443
@@ -97297,8 +97297,8 @@ Lab	lab	97267
 野驴	laco	97276
 野鸡	lacq	97277
 里面	lad	97278
-Lady%20Gaga	lada	97279
-Lady%20Gaga	ladg	97280
+Lady Gaga	lada	97279
+Lady Gaga	ladg	97280
 四散奔逃	ladi	97281
 躤	ladj	97282
 蹃	ladk	97283
@@ -98681,7 +98681,7 @@ Leopold	leop	98363
 园博园	lfl	98660
 团里	lfla	98661
 园里	lfla	98662
-404%20Not%20Found	lfld	98663
+404 Not Found	lfld	98663
 园圃	lfle	98664
 园囿	lfle	98665
 团团	lflf	98666
@@ -99116,7 +99116,7 @@ LGBT	lgbt	99005
 国画	lggl	99095
 跳到还没看的位置	lggl	99096
 连环画	lggl	99097
-LG%20gram	lggm	99098
+LG gram	lggm	99098
 回不来	lggo	99099
 蹲下来	lggo	99100
 加一下我	lggq	99101
@@ -100120,8 +100120,8 @@ Listary	lisy	100072
 〇九	liv	100099
 跳狙	live	100100
 踏寻	livf	100101
-Live%20Photo	livo	100102
-Live%20Photo	livp	100103
+Live Photo	livo	100102
+Live Photo	livp	100103
 〇九	livt	100104
 跳伞	liw	100105
 园游会	liw	100106
@@ -101519,7 +101519,7 @@ Live%20Photo	livp	100103
 力气	lnet	101498
 软心肠	lnev	101499
 思考	lnf	101500
-404%20Not%20Found	lnf	101501
+404 Not Found	lnf	101501
 路氹城	lnf	101502
 🤔	lnf	101503
 😕	lnf	101504
@@ -101808,11 +101808,11 @@ Logitech	logi	101786
 Logo	logo	101787
 LOGO	logo	101788
 略带	logp	101789
-Logic%20Pro	logp	101790
-Logic%20Pro%20X	logp	101791
+Logic Pro	logp	101790
+Logic Pro X	logp	101791
 因为一种	logt	101792
 因为一个	logw	101793
-Logic%20Pro%20X	logx	101794
+Logic Pro X	logx	101794
 路上	loh	101795
 踮	loh	101796
 路径	lohc	101797
@@ -101878,7 +101878,7 @@ LOL	lol	101835
 曾祖父	lomt	101857
 略屌	lon	101858
 略懂	lona	101859
-long%20time%20no%20see	lone	101860
+long time no see	lone	101860
 䡪	long	101861
 路氹	loni	101862
 略慢	lonj	101863
@@ -102403,7 +102403,7 @@ LPL	lpl	102156
 连坐	lpww	102382
 连续	lpx	102383
 跎	lpx	102384
-Logic%20Pro%20X	lpx	102385
+Logic Pro X	lpx	102385
 蹿红	lpxa	102386
 国家级	lpxb	102387
 连缀	lpxc	102388
@@ -103617,7 +103617,7 @@ LTE	lte	103434
 䡧	ltno	103596
 回复惨案	ltnp	103597
 图片已过期	ltns	103598
-long%20time%20no%20see	ltns	103599
+long time no see	ltns	103599
 国税局	ltns	103600
 跟自己比	ltnx	103601
 团委书记	ltny	103602
@@ -104956,19 +104956,19 @@ mA	ma	104903
 Mac	mac	104935
 MacBook	mac	104936
 mac	mac	104937
-MacBook%20Air	maca	104938
+MacBook Air	maca	104938
 MacBook	macb	104939
 山东鲁能	macc	104940
 MAC地址	macf	104941
 Macintosh	mach	104942
 macintosh	mach	104943
-Mac%20mini	maci	104944
+Mac mini	maci	104944
 Macintosh	maci	104945
 macintosh	maci	104946
-Mac%20mini	macm	104947
+Mac mini	macm	104947
 macOS	maco	104948
 MacOS	maco	104949
-MacBook%20Pro	macp	104950
+MacBook Pro	macp	104950
 贼鸡	macq	104951
 macOS	macs	104952
 MacOS	macs	104953
@@ -105022,13 +105022,13 @@ Mac系统	macx	104955
 鄷	magb	105001
 Magic	magc	105002
 艶	magc	105003
-Magic%20Keyboard	magd	105004
+Magic Keyboard	magd	105004
 MagSafe	mage	105005
 㠏	magf	105006
 屸	magg	105007
 Magic	magi	105008
 MagSafe充电器	magk	105009
-Magic%20Keyboard	magk	105010
+Magic Keyboard	magk	105010
 公共事业	mago	105011
 MagSafe	mags	105012
 公共事务	magt	105013
@@ -105239,7 +105239,7 @@ Maya	maya	105205
 风险	mb	105218
 👴	mb	105219
 MBA	mba	105220
-MacBook%20Air	mba	105221
+MacBook Air	mba	105221
 分子式	mba	105222
 分子式	mbaa	105223
 mBack	mbac	105224
@@ -105322,7 +105322,7 @@ mBack	mbak	105225
 🏤	mbns	105301
 凹函数	mbo	105302
 凹函数	mbov	105303
-MacBook%20Pro	mbp	105304
+MacBook Pro	mbp	105304
 Mbps	mbp	105305
 邮差	mbpa	105306
 邮寄	mbpd	105307
@@ -105950,7 +105950,7 @@ m3u8	mdum	105869
 骨灰	medo	105929
 ⚱	medo	105930
 髓	medp	105931
-Media%20Encoder	medr	105932
+Media Encoder	medr	105932
 曲肱而枕	meds	105933
 顝	medu	105934
 骨碌	medv	105935
@@ -107463,13 +107463,13 @@ Microsoft	mic	107441
 microUSB	micb	107442
 MicroUSB	micb	107443
 MicroSD	micd	107444
-Microsoft%20365	micd	107445
-Microsoft%20Edge	mice	107446
-Microsoft%20365	micg	107447
+Microsoft 365	micd	107445
+Microsoft Edge	mice	107446
+Microsoft 365	micg	107447
 Micro-SIM卡	mich	107448
 MicroSD卡	mich	107449
 MicroUSB接口	mick	107450
-Microsoft%20Office	mico	107451
+Microsoft Office	mico	107451
 MicroUSB	micr	107452
 Micro-SIM	mics	107453
 MicroSD	mics	107454
@@ -108762,14 +108762,14 @@ MOBA游戏	mobc	108740
 mobi	mobi	108741
 MOOC	moc	108742
 Model	mod	108743
-Model%203	modd	108744
+Model 3	modd	108744
 央视三套	modd	108745
 Model	mode	108746
 Model	modl	108747
 肉烂在锅里	modl	108748
-Model%20S	mods	108749
-Model%20X	modx	108750
-Model%20Y	mody	108751
+Model S	mods	108749
+Model X	modx	108750
+Model Y	mody	108751
 盆底肌	moe	108752
 盆底肌	moem	108753
 赃	mof	108754
@@ -108872,7 +108872,7 @@ MOV	mov	108836
 分数线	mox	108851
 Mozilla	mox	108852
 Mozilla	moxa	108853
-Mozilla%20Firefox	moxf	108854
+Mozilla Firefox	moxf	108854
 分数线	moxg	108855
 Mozilla	moxi	108856
 周启豪	moy	108857
@@ -109897,7 +109897,7 @@ MSDN	msdn	109831
 㠒	msij	109876
 谷歌浏览器	msik	109877
 风生水起	msik	109878
-Google%20Chrome	msik	109879
+Google Chrome	msik	109879
 山顶洞	msim	109880
 枣泥	msin	109881
 刺激	msir	109882
@@ -111696,7 +111696,7 @@ Music	musi	110722
 曲线图	mxlt	111675
 岰	mxlt	111676
 几比几	mxm	111677
-MX%20Master	mxm	111678
+MX Master	mxm	111678
 幽谷	mxmk	111679
 几经周折	mxmr	111680
 几比几	mxmt	111681
@@ -113181,9 +113181,9 @@ NEDC工况	nedu	113015
 㥒	nesy	113160
 导航条	net	113161
 .NET	net	113162
-.NET%20Framework	net	113163
+.NET Framework	net	113163
 心肺复苏	neta	113164
-.NET%20Framework	netf	113165
+.NET Framework	netf	113165
 导航条	neti	113166
 Network	netk	113167
 尾程	netk	113168
@@ -116245,13 +116245,13 @@ no趴笨	nolt	116196
 必为	noot	116224
 惔	nooy	116225
 必定	nop	116226
-No%20problem	nop	116227
+No problem	nop	116227
 恪守	nopf	116228
 必定	nopg	116229
 必被	noph	116230
 惦着	noph	116231
 Noppoo	nopp	116232
-No%20problem	nopr	116233
+No problem	nopr	116233
 异度空间	nopu	116234
 必究	nopv	116235
 必然	noq	116236
@@ -116312,8 +116312,8 @@ Nova	nova	116286
 心灵	novi	116291
 Novanewstar	novr	116292
 惊爆价	now	116293
-$y年$m月$d日%20$W%20$0h:$0mi:$0s	now	116294
-No%20way	nowa	116295
+$y年$m月$d日 $W $0h:$0mi:$0s	now	116294
+No way	nowa	116295
 屡创	nowb	116296
 必做	nowd	116297
 敢为人先	nowe	116298
@@ -117923,7 +117923,7 @@ NVMe	nvme	117827
 恰巧	nwag	117902
 情人节礼物	nwak	117903
 情人节快乐	nwaq	117904
-Happy%20Valentine's%20Day	nwaq	117905
+Happy Valentine's Day	nwaq	117905
 居住区	nwar	117906
 怜花	nwaw	117907
 戮	nway	117908
@@ -118249,11 +118249,11 @@ n个	nwh	117962
 惯贼	nxma	118228
 惯性	nxn	118229
 屁民	nxna	118230
-no%20zuo%20no%20die	nxnd	118231
+no zuo no die	nxnd	118231
 屌丝心态	nxnd	118232
 憶	nxni	118233
 惯性	nxns	118234
-no%20zuo%20no%20die%20why%20you%20try	nxnt	118235
+no zuo no die why you try	nxnt	118235
 心意已决	nxnu	118236
 屁屁	nxnx	118237
 尼康	nxo	118238
@@ -118722,7 +118722,7 @@ OA	oa	118667
 广东卫视	oabo	118701
 烧鸡	oac	118702
 祝英台	oac	118703
-only%20apple%20can%20do	oacd	118704
+only apple can do	oacd	118704
 剫	oacj	118705
 祝英台	oack	118706
 烧鸡	oacq	118707
@@ -120027,11 +120027,11 @@ OFDM	ofdm	119986
 备妥	ofev	120006
 Office	off	120007
 offer	off	120008
-Office%20365	off	120009
+Office 365	off	120009
 烤翅	offc	120010
 Office	offe	120011
 烤干	offg	120012
-Office%20365	offg	120013
+Office 365	offg	120013
 烓	offg	120014
 社址	offh	120015
 麻干盐	offh	120016
@@ -123141,7 +123141,7 @@ OPPO	oppo	123118
 迷之	oppp	123120
 为官之道	oppu	123121
 迷案	oppv	123122
-OPPO%20Find%20X	oppx	123123
+OPPO Find X	oppx	123123
 数字键	opq	123124
 神农氏	opq	123125
 🔢	opq	123126
@@ -124059,7 +124059,7 @@ OSPF	ospf	123972
 灯位	oswu	124038
 床伴	oswu	124039
 庲	osww	124040
-OS%20X	osx	124041
+OS X	osx	124041
 灯组	osxe	124042
 视杆细胞	osxe	124043
 灯绳	osxk	124044
@@ -126380,13 +126380,13 @@ papi酱	papu	126347
 差多	paqq	126359
 穿多	paqq	126360
 空白	par	126361
-Parallels%20Desktop	par	126362
+Parallels Desktop	par	126362
 安慕希	par	126363
 穿搭	para	126364
 Parallels	para	126365
 穿反	parc	126366
 安慕希	pard	126367
-Parallels%20Desktop	pard	126368
+Parallels Desktop	pard	126368
 密切接触者	parf	126369
 空挡	pari	126370
 空缺	parm	126371
@@ -126394,7 +126394,7 @@ Parallels%20Desktop	pard	126368
 窃据	parn	126373
 宁芝拼多多旗舰店	paro	126374
 安营扎寨	parp	126375
-Parallels%20Desktop	parp	126376
+Parallels Desktop	parp	126376
 密切接触	parq	126377
 空白	parr	126378
 差集	pars	126379
@@ -126433,7 +126433,7 @@ Parallels	pars	126381
 农工商	pau	126412
 Pause	pau	126413
 空瓶	paua	126414
-Pause%20Break	paub	126415
+Pause Break	paub	126415
 空头	paud	126416
 空前	paue	126417
 羞花闭月	paue	126418
@@ -126441,7 +126441,7 @@ Pause%20Break	paub	126415
 密切关注	paui	126420
 空间	pauj	126421
 军功章	pauj	126422
-Pause%20Break	pauk	126423
+Pause Break	pauk	126423
 空单	paul	126424
 农工商	paum	126425
 空拳	paur	126426
@@ -131568,8 +131568,8 @@ Preview	pre	131546
 宾朋	pree	131547
 安排妥当	prei	131548
 牢靠	prek	131549
-Premiere%20Pro	preo	131550
-Premiere%20Pro	prep	131551
+Premiere Pro	preo	131550
+Premiere Pro	prep	131551
 㝦	prer	131552
 守护者	prf	131553
 密接者	prf	131554
@@ -131649,25 +131649,25 @@ PR	prl	131618
 实质性	prns	131628
 䆢	prnw	131629
 Pro	pro	131630
-Pro%20Max	pro	131631
+Pro Max	pro	131631
 prototype	pro	131632
 窑烧	proa	131633
 prototype	proe	131634
-Program%20Files	prof	131635
+Program Files	prof	131635
 守护神	proj	131636
 Program	prom	131637
-Pro%20Max	prom	131638
+Pro Max	prom	131638
 ProMotion	prom	131639
 ProMotion	pron	131640
 窑炉	proo	131641
 __proto__	proo	131642
 牢房	prop	131643
 牢底	proq	131644
-Program%20Files	pros	131645
+Program Files	pros	131645
 ProMotion自适应刷新率技术	pros	131646
 prototype	prot	131647
 䆶	prou	131648
-Pro%20Max	prox	131649
+Pro Max	prox	131649
 实打实	prp	131650
 密执安	prp	131651
 宾客	prpo	131652
@@ -131857,7 +131857,7 @@ PS	psl	131834
 冠生园	pslf	131836
 㿾	pslf	131837
 宋国	pslg	131838
-P.S.%20	psll	131839
+P.S. 	psll	131839
 襟	pslm	131840
 冤枉路	pslo	131841
 方枘圆凿	pslo	131842
@@ -140831,9 +140831,9 @@ QuickTime	qui	140807
 解剖学	quib	140810
 QuickTime	quie	140811
 乐道汽车	quil	140812
-QuickTime%20Player	quip	140813
+QuickTime Player	quip	140813
 镁光	quiq	140814
-QuickTime%20Player	quir	140815
+QuickTime Player	quir	140815
 QuickTime	quit	140816
 我关注的人也关注她	quiv	140817
 我关注的人也关注他	quiw	140818
@@ -144380,7 +144380,7 @@ RealForce	real	144330
 集腋成裘	redf	144359
 制造厂	redg	144360
 扔在	redh	144361
-Red%20Hat	redh	144362
+Red Hat	redh	144362
 Redmi	redi	144363
 抠脚大汉	redi	144364
 的朋友圈	redl	144365
@@ -144391,7 +144391,7 @@ Redmi	redm	144367
 所造成的	redr	144370
 报告厅	reds	144371
 捧腹大笑	redt	144372
-Red%20Hat	redt	144373
+Red Hat	redt	144373
 拥有	ree	144374
 热腾腾	ree	144375
 拍胸脯	ree	144376
@@ -144633,9 +144633,9 @@ Retina	reti	144608
 撬片	retn	144612
 授牌	retn	144613
 Return	retn	144614
-Retina%20MacBook%20Pro	reto	144615
+Retina MacBook Pro	reto	144615
 撝	reto	144616
-Retina%20MacBook%20Pro	retp	144617
+Retina MacBook Pro	retp	144617
 搬移	retq	144618
 摇移	retq	144619
 Return	retu	144620
@@ -146110,7 +146110,7 @@ Rh阴性	rhbn	146034
 摣	rheg	146089
 掉盘	rhel	146090
 RHEL	rhel	146091
-Red%20Hat%20Enterprise%20Linux	rhel	146092
+Red Hat Enterprise Linux	rhel	146092
 牛股	rhem	146093
 牛毛	rhen	146094
 掉毛	rhen	146095
@@ -148339,7 +148339,7 @@ RMB	rmb	148303
 缺了	rmbn	148318
 看见了	rmbn	148319
 rmbp	rmbp	148320
-Retina%20MacBook%20Pro	rmbp	148321
+Retina MacBook Pro	rmbp	148321
 缺陷	rmbq	148322
 投降	rmbt	148323
 白内障	rmbu	148324
@@ -159242,7 +159242,7 @@ Siri	siri	159116
 要注意	sixn	159221
 要注意的	sixr	159222
 松活弹抖	sixr	159223
-six%20six%20six	sixx	159224
+six six six	sixx	159224
 西游记	siy	159225
 林清玄	siy	159226
 杯酒言欢	siyc	159227
@@ -159409,7 +159409,7 @@ six%20six%20six	sixx	159224
 生日蛋糕	sjno	159388
 🎂	sjno	159389
 生日快乐	sjnq	159390
-Happy%20birthday	sjnq	159391
+Happy birthday	sjnq	159391
 查房	sjo	159392
 李明启	sjo	159393
 生日礼物	sjok	159394
@@ -161266,13 +161266,13 @@ SpaceX	spax	161203
 进奉	spdw	161245
 李宇春	spdw	161246
 板着脸	spe	161247
-S%20Pen	spe	161248
+S Pen	spe	161248
 榨乳	speb	161249
 椬	speg	161250
 䣾	speg	161251
 样盘	spel	161252
 棕毛	spen	161253
-S%20Pen	spen	161254
+S Pen	spen	161254
 样貌	sper	161255
 进气	spet	161256
 榢	speu	161257
@@ -163389,7 +163389,7 @@ Sublime	subl	163365
 相关函数	subo	163368
 李商隐	subq	163369
 西门子洗碗机	subs	163370
-Sublime%20Text	subt	163371
+Sublime Text	subt	163371
 相关联	subu	163372
 梯队	subw	163373
 校队	subw	163374
@@ -163608,17 +163608,17 @@ Supreme	supr	163569
 可立拍	sur	163587
 Surface	sur	163588
 校报	surb	163589
-Surface%20Book	surb	163590
+Surface Book	surb	163590
 酸辣牛肉面	surd	163591
-Surface%20Go	surg	163592
+Surface Go	surg	163592
 标准指法	suri	163593
-Surface%20Laptop	surl	163594
-Surface%20Pro	surp	163595
+Surface Laptop	surl	163594
+Surface Pro	surp	163595
 相关的	surq	163596
 橷	surq	163597
 梳妆打扮	surr	163598
 可立拍	surr	163599
-Surface%20Studio	surs	163600
+Surface Studio	surs	163600
 校招	surv	163601
 西部牛仔	surw	163602
 樽	sus	163603
@@ -164095,10 +164095,10 @@ SVIP	svip	163831
 哥伦布	swdm	164074
 枪灰	swdo	164075
 橙灰	swdo	164076
-生命冇take%20two	swdo	164077
+生命冇take two	swdo	164077
 欺人太甚	swds	164078
 机会成本	swds	164079
-生命冇take%20two	swdt	164080
+生命冇take two	swdt	164080
 覄	swdu	164081
 栿	swdy	164082
 榆	swe	164083
@@ -164107,8 +164107,8 @@ SVIP	svip	163831
 䤅	sweh	164086
 枪膛	swei	164087
 榆	swej	164088
-生命冇take%20two	sweo	164089
-生命冇take%20two	swet	164090
+生命冇take two	sweo	164089
+生命冇take two	swet	164090
 桧	swf	164091
 杏仁露	swf	164092
 柳传志	swf	164093
@@ -165183,12 +165183,12 @@ taobao.com	tao	165149
 升为	taot	165162
 长廊	taoy	165163
 逄	tap	165164
-Taptic%20Engine	tap	165165
+Taptic Engine	tap	165165
 升空	tapa	165166
 长空	tapa	165167
 Taptic	tapc	165168
 长衫	tape	165169
-Taptic%20Engine	tape	165170
+Taptic Engine	tape	165170
 长袜	tapg	165171
 长着	taph	165172
 逄	tapi	165173
@@ -168183,7 +168183,7 @@ TG群	tgvt	167999
 自奉	thdw	168162
 穢	thdy	168163
 釉上彩	the	168164
-The%20Beatles	theb	168165
+The Beatles	theb	168165
 自肥	thec	168166
 臭脚	thef	168167
 自有	theg	168168
@@ -168202,7 +168202,7 @@ The%20Beatles	theb	168165
 稍微有点儿	theq	168181
 自胜	thes	168182
 釉上彩	thes	168183
-The%20Beatles	thes	168184
+The Beatles	thes	168184
 延用	thet	168185
 自用	thet	168186
 臭气	thet	168187
@@ -168782,7 +168782,7 @@ THz	thx	168681
 稍难	ticr	168761
 条鱼	tict	168762
 条码	tid	168763
-Touch%20ID	tid	168764
+Touch ID	tid	168764
 条码	tidc	168765
 稍大	tidd	168766
 自学成才	tidf	168767
@@ -168963,10 +168963,10 @@ TiMi	timi	168937
 千兆网口	timk	168942
 秒删	timm	168943
 簿册	timm	168944
-Times%20New%20Roman	timn	168945
+Times New Roman	timn	168945
 稍见	timq	168946
 千兆网	timr	168947
-Times%20New%20Roman	timr	168948
+Times New Roman	timr	168948
 秒内	timw	168949
 科学性	tin	168950
 自觉性	tin	168951
@@ -170738,7 +170738,7 @@ T恤衫	tnpe	170699
 片儿	tnqt	170717
 㸝	tnqw	170718
 自己的	tnr	170719
-Times%20New%20Roman	tnr	170720
+Times New Roman	tnr	170720
 自己把自己玩死了	tnrb	170721
 秘技	tnrf	170722
 牌技	tnrf	170723
@@ -170911,7 +170911,7 @@ T恤	tntl	170765
 秋耕	todi	170890
 翻耕	todi	170891
 重庆大学	todi	170892
-To-Do%20List	todl	170893
+To-Do List	todl	170893
 翻页	todm	170894
 翻面	todm	170895
 To-Do	todo	170896
@@ -171083,7 +171083,7 @@ tony老师	tonj	171050
 臭烘烘	tooa	171062
 黏糊糊	tood	171063
 愁烦	tood	171064
-too%20young%20too%20simple	tooe	171065
+too young too simple	tooe	171065
 翻炒	tooi	171066
 透视视图	tool	171067
 簩	tool	171068
@@ -171177,14 +171177,14 @@ toString	tos	171131
 重启笔记本	tots	171156
 秋冬	totu	171157
 翻入	toty	171158
-Touch%20ID	tou	171159
+Touch ID	tou	171159
 适应症	tou	171160
 Touch	tou	171161
 翻卷	toub	171162
-Touch%20Bar	toub	171163
-Touch%20ID	touc	171164
+Touch Bar	toub	171163
+Touch ID	touc	171164
 Touch	touc	171165
-Touch%20ID	toud	171166
+Touch ID	toud	171166
 香烟头	toud	171167
 乌烟瘴气	toue	171168
 秋装	touf	171169
@@ -171197,7 +171197,7 @@ Touch	touh	171173
 愁闷	toun	171176
 簾	touo	171177
 䆂	touo	171178
-Touch%20Bar	tour	171179
+Touch Bar	tour	171179
 篇首	tout	171180
 翻阅	touu	171181
 夈	touu	171182
@@ -171506,8 +171506,8 @@ T字路口	tplk	171351
 管住	tpwy	171485
 长宽比	tpx	171486
 复写纸	tpx	171487
-ThinkPad%20X1%20Carbon	tpx	171488
-ThinkPad%20X1%20Carbon	tpxc	171489
+ThinkPad X1 Carbon	tpx	171488
+ThinkPad X1 Carbon	tpxc	171489
 重案组	tpxe	171490
 管线	tpxg	171491
 私定终身	tpxh	171492
@@ -174531,7 +174531,7 @@ Type-C数据线	typx	174465
 复刻版	tytn	174510
 入秋	tyto	174511
 自主知识产权	tyts	174512
-too%20young%20too%20simple	tyts	174513
+too young too simple	tyts	174513
 入冬	tytu	174514
 自言自语	tyty	174515
 长话短说	tyty	174516
@@ -181496,7 +181496,7 @@ uRLLC	urll	181444
 交臂	urnk	181475
 准尉	urnl	181476
 新年快乐	urnq	181477
-Happy%20New%20Year	urnq	181478
+Happy New Year	urnq	181478
 闲的蛋疼	urnu	181479
 半按快门	urnu	181480
 准备	uro	181481
@@ -181711,14 +181711,14 @@ USB	usb	181689
 产生了	usb	181690
 闲聊	usb	181691
 USB-A	usba	181692
-USB%20Hub	usbb	181693
+USB Hub	usbb	181693
 USB-C	usbc	181694
 USB-C接口	usbc	181695
 USB3.0	usbd	181696
 USB3.1	usbd	181697
 USB2.0	usbf	181698
 产生出来	usbg	181699
-USB%20Hub	usbh	181700
+USB Hub	usbh	181700
 USB接口	usbk	181701
 USB-C接口	usbk	181702
 闲职	usbk	181703
@@ -184627,11 +184627,11 @@ VA面板	vads	184524
 䫮	vaku	184606
 嫨	vakw	184607
 发散思维	val	184608
-Valentine's%20Day	vald	184609
+Valentine's Day	vald	184609
 媌	valg	184610
 㜴	valh	184611
 发散思维	valx	184612
-Valentine's%20Day	valy	184613
+Valentine's Day	valy	184613
 媾	vam	184614
 狼牙山	vam	184615
 媖	vamd	184616
@@ -185610,7 +185610,7 @@ VC均热板	vcfs	185351
 㺂	vdky	185589
 忍耐力	vdl	185590
 好友圈	vdl	185591
-Valentine's%20Day	vdl	185592
+Valentine's Day	vdl	185592
 好友辅助	vdle	185593
 妬	vdlg	185594
 好友辅助注册	vdlm	185595
@@ -187511,16 +187511,16 @@ Visio	visi	187488
 九河西路	visl	187490
 录机	vism	187491
 Visio	viso	187492
-Vision%20Pro	viso	187493
-Visual%20Studio	viso	187494
-Vision%20Pro	visp	187495
+Vision Pro	viso	187493
+Visual Studio	viso	187494
+Vision Pro	visp	187495
 杂样	visp	187496
 妙棋	viss	187497
 好学生	vist	187498
 女学生	vist	187499
 Vista	vist	187500
 👩‍🎓	vist	187501
-Visual%20Studio	visu	187502
+Visual Studio	visu	187502
 好消息	vit	187503
 群消息	vit	187504
 发消息	vit	187505
@@ -187554,7 +187554,7 @@ vivo	vivo	187531
 即兴发挥	vivr	187533
 发光发热	vivr	187534
 媣	vivs	187535
-vivo%20NEX	vivx	187536
+vivo NEX	vivx	187536
 如泣如诉	vivy	187537
 录像	viw	187538
 🎦	viw	187539
@@ -188585,11 +188585,11 @@ VMware	vmw	188561
 那几个	vmwh	188564
 好几个小时	vmwj	188565
 发公众号	vmwk	188566
-VMware%20Workstation	vmwn	188567
+VMware Workstation	vmwn	188567
 发邮件	vmwr	188568
 群邮件	vmwr	188569
 好几个人	vmww	188570
-VMware%20Workstation	vmww	188571
+VMware Workstation	vmww	188571
 妠	vmwy	188572
 那几张	vmx	188573
 那几张	vmxt	188574
@@ -189928,9 +189928,9 @@ VR眼镜	vrhq	189777
 独生子女	vsbv	189907
 婚生子女	vsbv	189908
 既可以	vsc	189909
-VS%20Code	vsc	189910
-Video%20Speed%20Controller	vsc	189911
-Visual%20Studio%20Code	vsc	189912
+VS Code	vsc	189910
+Video Speed Controller	vsc	189911
+Visual Studio Code	vsc	189912
 独木难支	vscf	189913
 既可以	vsch	189914
 那可能是	vscj	189915
@@ -190018,7 +190018,7 @@ VsCode	vsco	189918
 鼠标中键	vskq	189997
 姓啥	vskw	189998
 群机器人	vskw	189999
-Visual%20Studio	vsl	190000
+Visual Studio	vsl	190000
 嫖	vsl	190001
 群相册	vsm	190002
 狂想曲	vsm	190003
@@ -195797,26 +195797,26 @@ Wikipedia	wiki	195749
 Win	win	195776
 Windows	win	195777
 合法性	win	195778
-Win%207	wina	195779
-Windows%207	wina	195780
+Win 7	wina	195779
+Windows 7	wina	195780
 Win/Mac	winc	195781
-Windows%20Defender	wind	195782
-Win%2010	winf	195783
-Windows%2010	winf	195784
-Win%2011	wing	195785
-Windows%2011	wing	195786
-Win%20To%20Go	wing	195787
-Windows%20To%20Go	wing	195788
+Windows Defender	wind	195782
+Win 10	winf	195783
+Windows 10	winf	195784
+Win 11	wing	195785
+Windows 11	wing	195786
+Win To Go	wing	195787
+Windows To Go	wing	195788
 剑眉	winh	195789
 悆	wini	195790
 Windows资源管理器	wink	195791
 信赏必罚	winl	195792
 Win/Mac	winm	195793
-Win%208	winm	195794
-Windows%208	winm	195795
-Win%20To%20Go	wino	195796
-Windows%20To%20Go	wino	195797
-Windows%20XP	winp	195798
+Win 8	winm	195794
+Windows 8	winm	195795
+Win To Go	wino	195796
+Windows To Go	wino	195797
+Windows XP	winp	195798
 WindowsPhone	winp	195799
 Win键	winq	195800
 WinRAR	winr	195801
@@ -195824,9 +195824,9 @@ WinRAR	winr	195801
 传染性	wins	195803
 合法性	wins	195804
 余悸	wint	195805
-Windows%20Vista	winv	195806
+Windows Vista	winv	195806
 Windows操作系统	winx	195807
-Windows%20XP	winx	195808
+Windows XP	winx	195808
 斜视	wio	195809
 位小数	wio	195810
 信誉度	wio	195811
@@ -197260,7 +197260,7 @@ Win/Mac	wml	197198
 坐骨神经	wmox	197239
 亿分之	wmp	197240
 作曲家	wmp	197241
-Windows%20Media%20Player	wmp	197242
+Windows Media Player	wmp	197242
 他山之石	wmpd	197243
 俗家	wmpe	197244
 作曲家	wmpe	197245
@@ -198218,7 +198218,7 @@ WordPress	wors	198126
 wow	wow	198197
 住房保障	wowb	198198
 你为何如此突出	wowb	198199
-wow%20awesome	wowe	198200
+wow awesome	wowe	198200
 全社会	wowf	198201
 偏斜	wowi	198202
 㒣	wowi	198203
@@ -198641,7 +198641,7 @@ wow%20awesome	wowe	198200
 全家桶	wps	198620
 WPS	wps	198621
 全家桶	wpsc	198622
-WPS%20Office	wpse	198623
+WPS Office	wpse	198623
 邻村	wpsf	198624
 酓	wpsf	198625
 令其	wpsg	198626
@@ -198652,7 +198652,7 @@ WPS%20Office	wpse	198623
 全军覆没	wpsi	198631
 盦	wpsl	198632
 侦察机	wpsm	198633
-WPS%20Office	wpso	198634
+WPS Office	wpso	198634
 住宅楼	wpso	198635
 䳺	wpso	198636
 领进	wpsp	198637
@@ -200167,7 +200167,7 @@ WPS%20Office	wpso	198634
 什么都	wtfj	200146
 低等动物	wtfk	200147
 WTF	wtfl	200148
-What%20The%20Fuck	wtfl	200149
+What The Fuck	wtfl	200149
 合击	wtfm	200150
 伤筋动骨	wtfm	200151
 你算老几	wtfm	200152
@@ -214996,7 +214996,7 @@ YouTube	you	214973
 🧂	you	214975
 调料瓶	youa	214976
 🧂	youa	214977
-you%20can%20you%20up,%20no%20can%20no%20bb	youb	214978
+you can you up, no can no bb	youb	214978
 弯头	youd	214979
 变装	youf	214980
 变美	youg	214981
@@ -218473,11 +218473,11 @@ yygq	yygq	218097
 @	za	218452
 ＆	za	218453
 ＠	za	218454
-A.%20B.%20C.%20D.%20	zab	218455
+A. B. C. D. 	zab	218455
 A.\nB.\nC.\nD.	zab	218456
 shop34461539.taobao.com	zad	218457
 A大的淘宝店	zad	218458
-After%20Effects	zae	218459
+After Effects	zae	218459
 α	zaf	218460
 Α	zaf	218461
 阿尔法	zaf	218462
@@ -219365,9 +219365,9 @@ wubi.chenxinfa.com/search/	zfc	219329
 □	zfk	219344
 ♦	zfk	219345
 [疯了]	zfl	219346
-Z%20Flip	zfl	219347
-Z%20Flip	zfli	219348
-Z%20Flip	zflp	219349
+Z Flip	zfl	219347
+Z Flip	zfli	219348
+Z Flip	zflp	219349
 /发怒	zfn	219350
 [发怒]	zfn	219351
 ♦	zfp	219352
@@ -219385,7 +219385,7 @@ https://wubi.chenxinfa.com/book/	zfv	219354
 ```	zg	219364
 /*	zg	219365
 */	zg	219366
-/*%20%20*/	zg	219367
+/*  */	zg	219367
 龷廾卄匚匸旡戉	zga	219368
 龷	zgag	219369
 廾	zgah	219370
@@ -219614,7 +219614,7 @@ zh-tw	zhtw	219580
 '	zi	219593
 ,	zi	219594
 |	zi	219595
-Internet%20Explorer	zie	219596
+Internet Explorer	zie	219596
 ZigBee	zig	219597
 zip	zip	219598
 Zippo	zip	219599
@@ -220742,7 +220742,7 @@ xwaishe.taobao.com	ztb	220665
 98五笔网盘	zvm	220721
 986wb.ysepan.com	zvmu	220722
 986五笔网盘	zvmu	220723
-Visual%20Studio	zvs	220724
+Visual Studio	zvs	220724
 ？	zw	220725
 ?	zw	220726
 ∞	zw	220727
@@ -220755,7 +220755,7 @@ wampserver	zwa	220732
 /汪汪	zwc	220734
 [旺柴]	zwc	220735
 /问号脸	zwh	220736
-Windows%20Phone	zwi	220737
+Windows Phone	zwi	220737
 ★	zwj	220738
 ☆	zwj	220739
 /捂脸	zwl	220740
