@@ -39,6 +39,23 @@ jobs:
         run: |
           sdkmanager --install "cmake;3.31.6"
 
+      - name: Generate signing key
+        run: |
+          keytool -genkey -v \
+            -keystore keystore.jks \
+            -alias trime091 \
+            -keyalg RSA -keysize 2048 -validity 10000 \
+            -dname "CN=sansan09527, OU=Personal, O=Personal, L=Unknown, ST=Unknown, C=CN" \
+            -storepass trime091wubi \
+            -keypass trime091wubi
+          KEYSTORE_BASE64=$(base64 -w 0 keystore.jks)
+          cat << EOF > keystore.properties
+          keyBase64=$KEYSTORE_BASE64
+          storePassword=trime091wubi
+          keyAlias=trime091
+          keyPassword=trime091wubi
+          EOF
+
       - name: Calculate JNI cache hash
         id: cache-hash
         run: |
@@ -49,27 +66,27 @@ jobs:
         id: jni-cache
         with:
           path: "app/prebuilt"
-          key: ${{ runner.os }}-trime-jni-debug-${{ steps.cache-hash.outputs.native-cache-hash }}
+          key: ${{ runner.os }}-trime-jni-release-${{ steps.cache-hash.outputs.native-cache-hash }}
 
       - name: Fetch submodules
         if: ${{ !steps.jni-cache.outputs.cache-hit }}
         run: |
           git submodule update --init --recursive
 
-      - name: Build debug Trime
+      - name: Build release Trime
         run: |
-          make debug
+          make release
 
       - name: Add JNI cache
         if: ${{ !steps.jni-cache.outputs.cache-hit }}
-        run: cp -R app/build/intermediates/merged_native_libs/debug/mergeDebugNativeLibs/out/lib app/prebuilt
+        run: cp -R app/build/intermediates/merged_native_libs/release/mergeReleaseNativeLibs/out/lib app/prebuilt
 
       - name: Create Release
         uses: ncipollo/release-action@v1
         with:
           tag: ${{ github.event.inputs.tag }}
           name: "Trime 091五笔 ${{ github.event.inputs.tag }}"
-          artifacts: "app/build/outputs/apk/debug/*.apk"
+          artifacts: "app/build/outputs/apk/release/*.apk"
           body: |
             ## Trime + 091五笔（点儿词库2026春）
 
@@ -77,6 +94,7 @@ jobs:
 
             - 词条数：222,207（含 3,757 条 z 词条）
             - 词库来源：点儿词库2026春
+            - 默认键盘主题：标准（tongwenfeng）
             - 基于 [osfans/trime](https://github.com/osfans/trime)
 
             ### 下载说明
