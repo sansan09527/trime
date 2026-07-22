@@ -5,6 +5,8 @@
 
 package com.osfans.trime.ui.main
 
+import android.animation.Animator
+import android.animation.AnimatorListenerAdapter
 import android.content.Context
 import android.graphics.Typeface
 import android.graphics.drawable.GradientDrawable
@@ -148,7 +150,6 @@ constructor(
     }
 
     private val header = horizontalLayout {
-        setPadding(dp(12))
         add(
             imageView {
                 imageDrawable = drawable(R.drawable.ic_input_box)!!.apply {
@@ -267,7 +268,14 @@ constructor(
     }
 
     init {
+        elevation = dp(4f)
         orientation = VERTICAL
+        setPadding(dp(12))
+        background = GradientDrawable().apply {
+            val r = dp(8f)
+            cornerRadii = floatArrayOf(r, r, r, r, 0f, 0f, 0f, 0f)
+            setColor(styledColor(android.R.attr.colorBackground))
+        }
         add(
             header,
             lParams(matchParent, wrapContent) {
@@ -285,6 +293,7 @@ constructor(
 
     fun show(window: Window) {
         if (isVisible) return
+        alpha = 1f
         isVisible = true
         input.text.clear()
         input.requestFocus()
@@ -295,7 +304,13 @@ constructor(
     fun dismiss() {
         if (!isVisible) return
         input.clearFocus()
-        isVisible = false
+        animate().alpha(0f)
+            .setDuration(200L)
+            .setListener(object : AnimatorListenerAdapter() {
+                override fun onAnimationEnd(animation: Animator) {
+                    isVisible = false
+                }
+            })
         inputMethodManager.hideSoftInputFromWindow(windowToken, 0)
     }
 
