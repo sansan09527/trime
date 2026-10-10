@@ -6,7 +6,7 @@ on:
       tag:
         description: '版本号 (如 v1.0.0)'
         required: true
-        default: 'v1.0.0'
+        default: 'v1.1.0'
 
 permissions:
   contents: write
@@ -15,21 +15,21 @@ env:
   CI_NAME: Release CI
 jobs:
   build:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     env:
       BUILD_ABI: armeabi-v7a,arm64-v8a,x86,x86_64
     steps:
       - name: Fetch source code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           submodules: recursive
           fetch-depth: 0
 
       - name: Setup Java
-        uses: actions/setup-java@v5
+        uses: actions/setup-java@v6
         with:
           distribution: "temurin"
-          java-version: 17
+          java-version: 25
           cache: 'gradle'
 
       - name: Setup Android SDK
@@ -39,21 +39,19 @@ jobs:
         run: |
           sdkmanager --install "cmake;3.31.6"
 
-      - name: Generate signing key
+      # 固定签名：密钥存在仓库 Secrets（本地备份在 ~/.keystores/trime091/）。
+      # 以前每次临时生成新密钥，各版本签名不同，手机上没法覆盖升级。
+      - name: Load signing key
+        env:
+          KEYSTORE_BASE64: ${{ secrets.TRIME091_KEYSTORE_BASE64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.TRIME091_KEYSTORE_PASSWORD }}
         run: |
-          keytool -genkey -v \
-            -keystore keystore.jks \
-            -alias trime091 \
-            -keyalg RSA -keysize 2048 -validity 10000 \
-            -dname "CN=sansan09527, OU=Personal, O=Personal, L=Unknown, ST=Unknown, C=CN" \
-            -storepass trime091wubi \
-            -keypass trime091wubi
-          KEYSTORE_BASE64=$(base64 -w 0 keystore.jks)
+          test -n "$KEYSTORE_BASE64" || { echo "缺少 TRIME091_KEYSTORE_BASE64"; exit 1; }
           cat << EOF > keystore.properties
           keyBase64=$KEYSTORE_BASE64
-          storePassword=trime091wubi
+          storePassword=$KEYSTORE_PASSWORD
           keyAlias=trime091
-          keyPassword=trime091wubi
+          keyPassword=$KEYSTORE_PASSWORD
           EOF
 
       - name: Calculate JNI cache hash
@@ -62,7 +60,7 @@ jobs:
           ./gradlew :app:calculateNativeCacheHash
 
       - name: Fetch JNI cache
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         id: jni-cache
         with:
           path: "app/prebuilt"
@@ -88,14 +86,16 @@ jobs:
           name: "Trime 091五笔 ${{ github.event.inputs.tag }}"
           artifacts: "app/build/outputs/apk/release/*.apk"
           body: |
-            ## Trime + 091五笔（点儿词库2026春）
+            ## Trime + 091五笔（点儿词库2026夏）
 
             内置091五笔输入方案，安装即用，无需手动导入词库。
 
-            - 词条数：222,207（含 3,757 条 z 词条）
-            - 词库来源：点儿词库2026春
+            - 词条数：227,563（含 3,764 条 z 词条）
+            - 词库来源：点儿词库2026夏
             - 默认键盘主题：标准（tongwenfeng）
-            - 基于 [osfans/trime](https://github.com/osfans/trime)
+            - 基于 [osfans/trime](https://github.com/osfans/trime) v3.3.12
+            - 从 v1.0.x 升级需先卸载旧版（旧版每次打包签名都不同）；从本版起签名固定，以后可直接覆盖升级
+            - 用户目录改为在设置里选择文件夹（SAF），选原来的 rime 文件夹即可导入自定义配置
 
             ### 下载说明
             - `arm64-v8a`：大多数现代安卓手机
