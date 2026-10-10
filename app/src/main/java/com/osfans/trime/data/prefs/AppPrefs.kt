@@ -9,7 +9,7 @@ import android.content.Context
 import android.content.SharedPreferences
 import androidx.annotation.Keep
 import com.osfans.trime.R
-import com.osfans.trime.data.base.DataManager
+import com.osfans.trime.data.sync.DataStorageMode
 import com.osfans.trime.ime.candidates.compact.CompactCandidateMode
 import com.osfans.trime.ime.candidates.popup.PopupCandidatesLayout
 import com.osfans.trime.ime.candidates.popup.PopupCandidatesMode
@@ -124,6 +124,8 @@ class AppPrefs(
 
             const val USE_SOFT_CURSOR = "use_soft_cursor"
             const val HIDE_INPUT_BAR = "hide_input_bar"
+            const val HIDE_KEY_SYMBOL = "hide_key_symbol"
+            const val HIDE_KEY_HINT = "hide_key_hint"
 
             const val SOUND_ON_KEYPRESS = "sound_on_keypress"
             const val KEY_SOUND_VOLUME = "sound_volume"
@@ -137,6 +139,7 @@ class AppPrefs(
             const val SPEAK_ON_KEYPRESS = "speak_on_keypress"
             const val SPEAK_ON_COMMIT = "speak_on_commit"
             const val POPUP_ON_KEY_PRESS = "show_key_popup"
+            const val EXPAND_KEYPRESS_AREA = "expand_keypress_area"
             const val SWIPE_TRAVEL = "key_swipe_travel"
             const val SWIPE_VELOCITY = "key_swipe_velocity"
             const val LONG_PRESS_TIMEOUT = "key_long_press_timeout"
@@ -178,6 +181,8 @@ class AppPrefs(
         val useSoftCursor = switch(R.string.use_soft_cursor, USE_SOFT_CURSOR, true)
 
         val hideInputBar = switch(R.string.hide_input_bar, HIDE_INPUT_BAR, false)
+        val hideKeySymbol = switch(R.string.hide_key_symbol, HIDE_KEY_SYMBOL, false)
+        val hideKeyHint = switch(R.string.hide_key_hint, HIDE_KEY_HINT, false)
 
         val soundOnKeyPress = switch(R.string.sound_on_keypress, SOUND_ON_KEYPRESS, false)
         val soundVolume = int(
@@ -236,6 +241,7 @@ class AppPrefs(
         val speakOnKeyPress = switch(R.string.speak_on_keypress, SPEAK_ON_KEYPRESS, false)
         val speakOnCommit = switch(R.string.speak_on_commit, SPEAK_ON_COMMIT, false)
         val popupOnKeyPress = switch(R.string.popup_on_key_press, POPUP_ON_KEY_PRESS, false)
+        val expandKeypressArea = switch(R.string.expand_keypress_area_to_edge, EXPAND_KEYPRESS_AREA, false)
         val swipeTravel = int(
             R.string.key_swipe_travel,
             SWIPE_TRAVEL,
@@ -354,15 +360,22 @@ class AppPrefs(
     class Profile(
         shared: SharedPreferences,
     ) : PreferenceDelegateOwner(shared) {
+
         companion object {
-            const val USER_DATA_DIR = "profile_user_data_dir"
+            const val EXTERNAL_RIME_TREE_URI = "profile_external_rime_tree_uri"
+            const val EXTERNAL_RIME_DISPLAY_NAME = "profile_external_rime_display_name"
+            const val DATA_STORAGE_MODE = "profile_data_storage_mode"
             const val PERIODIC_BACKGROUND_SYNC = "periodic_background_sync"
             const val PERIODIC_BACKGROUND_SYNC_INTERVAL = "periodic_background_sync_interval"
             const val LAST_BACKGROUND_SYNC_STATUS = "last_background_sync_status"
             const val LAST_BACKGROUND_SYNC_TIME = "last_background_sync_time"
+            const val USER_DB_MIGRATED = "profile_user_db_migrated"
         }
 
-        val userDataDir = string(USER_DATA_DIR, DataManager.defaultDataDir.path)
+        val dataStorageMode = enum(R.string.data_storage_mode, DATA_STORAGE_MODE, DataStorageMode.EXTERNAL_SYNC)
+        val externalRimeTreeUri = string(EXTERNAL_RIME_TREE_URI, "")
+        val externalRimeDisplayName = string(EXTERNAL_RIME_DISPLAY_NAME, "")
+        val userDbMigrated = bool(USER_DB_MIGRATED, false)
         val periodicBackgroundSync = bool(PERIODIC_BACKGROUND_SYNC, false)
         val periodicBackgroundSyncInterval = int(PERIODIC_BACKGROUND_SYNC_INTERVAL, 30)
         val lastBackgroundSyncStatus = bool(LAST_BACKGROUND_SYNC_STATUS, false)
@@ -425,6 +438,7 @@ class AppPrefs(
         companion object {
             const val UI_MODE = "ui_mode"
             const val SHOW_APP_ICON = "show_app_icon"
+            const val IGNORE_SYSTEM_GESTURE_INSETS = "ignore_system_gesture_insets"
         }
 
         enum class UiMode(override val stringRes: Int) : PreferenceDelegateEnum {
@@ -439,6 +453,11 @@ class AppPrefs(
             SHOW_APP_ICON,
             true,
             R.string.only_available_on_some_roms,
+        )
+        val ignoreSystemGestureInsets = switch(
+            R.string.ignore_system_gesture_insets,
+            IGNORE_SYSTEM_GESTURE_INSETS,
+            false,
         )
     }
 }

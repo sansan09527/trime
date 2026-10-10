@@ -2,6 +2,242 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.3.12] - 2026-09-01
+
+### 🚀 Features
+
+- Add input field for testing in `MainActivity`
+- Adjust margin so keyboard won't hide content
+- *(MainActivity)* Synchronize animation with the software keyboard
+- *(TestInputPanel)* Add fade-out animation for dismiss
+- Allow ignoring system gesture insets
+- Recreate input view when keyboard press area setting changes
+- Add vertical reverse layout for paged candidates
+- Wrap long candidate text in paged candidate items
+- Add strings for SAF storage and setup flow
+- Add SAF tree walker and sync index
+- Import and export Rime data via SAF
+- Import from SAF before deploy and await deploy completion
+- Export to SAF after background user-data sync
+- Replace storage permission step with SAF folder selection
+- Manage SAF data path and storage mode in profile
+- Sync theme and schema config with external SAF tree
+- Skip "userdb" directory too during import
+- Serialize local directory creation during import
+- Import via temp file then atomic replace
+- Export via temp SAF document then replace
+- One-time import of userdb on first migration
+- Show full directory path on "User Directory"
+- *(ui)* Restore the preedit UI root padding of #1933 and add top_start_radius
+- *(theme)* Complete state color params for key_border_color and key_symbol_color
+- Make system to ask user to keep data on uninstall
+- Import the external tree before user-data sync
+
+### 🐛 Bug Fixes
+
+- Loop `ContextWrapper` chain to get `FragmentActivity` correctly
+- Start drawable to `start` instead of `left`
+- Remove default tint color in vector drawable
+- Restore `isAsciiMode` after leaving password field
+- Binding keys for page turning couldn't turn candidate page continuously
+- Ensure input views aren't obscured by system UI bottom elements
+- Could not type uppercase letters in ascii mode
+- *(MainActivity)* Restore bottom margin after IME hides
+- Filter invalid key behavior tokens during keyboard parsing
+- Clear stale input bar candidates on paging mode switch
+- Uppercase key actions commit lowercase in ascii mode
+- Avoid oversized navigation bar inset (#2087)
+- Clear the SAF tree after a failed setup import
+- Bind the sync index to the selected tree URI
+- Export after every Rime user-data sync
+- Use unique SAF temp and backup names
+- Stage local copies in unique files and keep the old dest
+- Ui logic for storage mode change
+- *(ui)* Prevent the close button of the clipboard prompt from automatically gaining focus
+- *(ui)* Prevent candidate words in the candidate bar from automatically gaining focus
+- *(ui)* Prevent the sides and bottom of the keyboard area from automatically gaining focus
+- *(window)* After switching the theme color scheme, the position of the candidate window is not set correctly
+- *(theme)* Check and set initialization before accessing _activeTheme
+- *(ui)* In some apps, the clipboard popupMenu and keyboard stealing focus lead to high-frequency flickering
+- *(ui)* In some apps, the candidate popupMenu and keyboard stealing focus lead to high-frequency flickering
+- *(keyboard)* The keyboard can utilize the maximum available width when in landscape mode
+- *(keyboard)* The font icon with the prefix "ic@" should not be controlled by "keyLongTextSize"
+- *(ui)* The issue of abnormal coloring of the entry icon for test input
+- *(ui)* The abnormal color of the "More" button on the user dictionary page
+- *(window)* The issue where the container exceeds the screen when the content of the candidate window is too much
+- *(toolbar)* Clipboard content overflow when candidate_view_height is set to a certain threshold
+- *(key)* Unify per-key color fallback for functional keys
+
+### 🚜 Refactor
+
+- Polish TestInputPanel
+- Renew TestInputPanel background
+- Avoid setting internal option via rime
+- Disable popup menu icon showing on Samsung OneUI
+- Remove unused onRelease in keyboard action listener
+- Optimize text key sequence parsing
+- Improve KeyAction construction
+- Simplify KeyCode implementation
+- Simplify KeyCode conversions via generated mappings
+- Polish ToolButton implementation
+- Decouple ToolButton from RimeDaemon
+- Cache space key actions
+- Derive clickability from key behaviors
+- Don't bold toolbar labels by default
+- Merge Rime JNI queries to reduce boundary crossings
+- Migrate key symbol/hint visibility to app prefs
+- Do not open unrolled candidate window when highlight move on
+- Keep Rime user data under app-scoped storage
+- Extract DeployNotification for shared progress UI
+- Remove external storage permissions
+- Remove "reset data path" preference
+- Simplify picker intent logic
+- Refer to `installation.yaml` in DataManager
+- Refactor RimeLifecycle with StateFlow
+- Remove public MutableLiveData in steup UI
+- Polish setup page creation
+- Refine popup candidate window positioning
+
+### ⚡ Performance
+
+- Query the candidate layout with the response
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump version to 3.3.12
+- Update dependencies and migrate to AGP 9
+- SpotlessApply
+- Upgrade openjdk to 25
+- Update github action
+- Upgrade runner image to ubuntu-26.04
+- Format with clang-format
+- Echo clang-format version
+- Move up code style lint step
+- Add 3.3.12 changelog
+
+## [3.3.11] - 2026-07-01
+
+### 🐛 Bug Fixes
+
+- End composition only when toggling ascii_mode
+- Defer theme initialization until rime is ready
+- Add DT_HASH for Android 5.x (API ≤22) compatibility
+
+### 🚜 Refactor
+
+- Move ascii_mode composition handling to action listener
+- Remove misused kotlinx.coroutines.NonCancellable
+- Migrate to suspendCancellableCoroutine
+- Unify CandidateProto object for paged and bulk candidates
+- Create PopupMenu with themedContext
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump version to 3.3.11
+- Upgrade gradle to 9.5.1
+- Upgrade librime to 1.17.0
+- Add 3.3.11 changelog
+
+## [3.3.10] - 2026-04-30
+
+### 🚀 Features
+
+- *(keyboard)* Implement apply command for deploy and sync operations
+- *(theme)* Add candidate_corner_radius parameter for liquid tabs and candidate background
+- *(keyboard)* Add option to disable key preview via empty preview string
+- *(theme)* Apply back_style to clipboard title back button
+- *(keyboard)* Persist keyboard ID to remember user selection
+- Add static entries to SwitchOptionWindow
+- Add repeatable support for preset keys liquid keyboard
+- Disable swipe gestures by setting value to 0
+- *(toolbar)* Add long press action and repeatable support
+- *(clipboard)* Add initialTab parameter to ClipboardWindow for default tab selection
+- Redesign candidate comment layout with TOP/RIGHT/OVERLAY modes
+- Implement custom yaml node parser to get rid of kaml to parse theme
+- *(keyboard)* Key label centering and add line break support for symbol and hint
+- Make horizontal candidate item background wrap the content
+- *(ime)* Make AutoScaleTextView respect height constraints
+- Remove preedit text highlighted back color
+- Candidate action menu for CandidatesView
+- *(ui)* Add border and shadow configuration for candidate window
+- Support text sharing for clipboard and collection entries
+- Add dismiss button to clipboard suggestion view
+- Support word segmenting for clipboard and collection entries
+- Add setting to expand keypress area to edge
+- *(segments)* Implement boundary auto-scroll for drag selection
+
+### 🐛 Bug Fixes
+
+- Add additional measures for navBar, tappable, mandatory, and system gestures when lifting keyboard.
+- Fix ascii keys & remove duplicated ^ symbol (#1950)
+- Resolve issues and add missing changes from 91622f93 refactor
+- Remove keyboard ID persistence (revert 0c4f9d31)
+- Set minimum slide step size to 1
+- Correct key sliding cursor move to use KeyAction instead of raw key events
+- Improve gesture frame press feedback and multi-touch handling
+- *(toolbar)* Add missing normal state to circle button background
+- Use status.isComposing for key invalidation check instead of composition data
+- *(switches)* Make schema list dialog follow system dark mode
+- *(key)* Apply symbol text offset to icon fonts
+- *(key)* Use labelEnter only when label equals "enter_labels"
+- *(keyboard)* Correct split gap position to place at row midpoint
+- *(toolbar)* Skip pressed state styling for icon-only buttons
+- *(keyboard)* Sync enter key label with keyboard view
+- *(keyboard)* Restore `key_press_offset_*` assignment missing after 91622f9 refactor
+- *(keyboard)* Sync enter label on theme switch
+- *(config)* Replace RestartRime with UPDATE_CONFIG in theme files to sync with code changes
+- Clear key pressed state when popup keyboard focus out of bounds
+- *(keyboard)* Fix slide_xxx keys becoming unclickable when swipe distance is disabled in settings
+- Fix the erroneous call to project.rviders.exe in OpenCCDataPlugin (#1961)
+- *(ui)* Preedit no longer occupies full width, allowing clicks below blank area
+- *(ui)* Make AutoScaleTextView respect gravity setting for better visual centering
+- Add exception handling in user dictionary management
+- *(theme)* Preserve user preferences when following system night mode
+- Cannot open liquid keyboard due to yaml parsing mistake
+- *(keyboard)* Preserve ascii_mode across keyboard switches (#1979)
+- *(candidates)* Malformed candidate item layout in `TOP`/`OVERLAY` mode
+- Remove duplicate padding for candidate items in unrolled candidates
+- *(core)* Prevent NaN crash in AutoScaleTextView with flex layout
+- Incomplete toolbar back button customization
+- Incorrect action button position in SwitchOptionWinow's header
+- *(ui)* Summary not refreshed after changing user data directory
+- *(toolbar)* Default toolbar buttons (more icon) not working when tool_bar config is not present
+- *(candidates)* Restore candidate spacing divider
+- *(segments)* Preserve whitespace separators when joining selected
+- *(segments)* Replace SpacesItemDecoration with margin in LayoutParams
+- *(theme)* Fallback to available theme when selected is missing (#1999)
+- Fix the release cadence
+
+### 🚜 Refactor
+
+- Send KEYCODE_ENTER instead of commit "\n" when pressing enter on virtual keyboard
+- Set essential cmake argument in Gradle script
+- Avoid recreating InputView on unnecessary Configuration changes
+- Rename key command RESTART_RIME to UPDATE_CONFIG
+- Split key view and simplify keyboard layout and gesture architecture
+- Refresh keys only when composing state changes
+- *(theme)* Use companion decode function to decode theme beans
+- Add targeted key appearance update mechanism
+- Apply custom yaml parser to SoundEffect
+- Rename style `reset_ascii_mode` to `reset_ascii_mode_on_focus_change`
+- *(segements)* Improve drag selecting user experience
+- *(segments)* Move menu buttons to toolbar and right-align
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump version to 3.3.10
+- Upgrade gradle to 9.4.1
+- Bump gradle heap to 4GB
+- Switch to macos 26
+- Update OpenCC to 1.2.0
+- Update librime-lua to git+68f9c36
+- Upgrade setup android to v4
+- Add 3.3.10 changelog
+
+### ◀️ Revert
+
+- *(4b8badc)* "fix(keyboard): preserve ascii_mode across keyboard switches (#1979)"
+
 ## [3.3.9] - 2026-02-28
 
 ### 🚀 Features

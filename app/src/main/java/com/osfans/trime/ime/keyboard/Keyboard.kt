@@ -6,17 +6,13 @@
 package com.osfans.trime.ime.keyboard
 
 import android.content.Context
-import android.graphics.Point
-import android.os.Build
 import android.view.KeyEvent
-import android.view.WindowInsets
 import com.osfans.trime.data.prefs.AppPrefs
 import com.osfans.trime.data.theme.Theme
 import com.osfans.trime.data.theme.model.TextKeyboard
 import com.osfans.trime.ime.keyboard.KeyboardPrefs.isLandscapeMode
 import splitties.bitflags.hasFlag
 import splitties.dimensions.dp
-import splitties.systemservices.windowManager
 import kotlin.math.abs
 import kotlin.math.pow
 
@@ -25,6 +21,7 @@ import kotlin.math.pow
 class Keyboard(
     private val context: Context,
     private val theme: Theme,
+    private val allowedWidth: Int,
     selfConfig: TextKeyboard? = null,
 ) {
 
@@ -90,36 +87,6 @@ class Keyboard(
 
     var firstPressedKeyIndex: Int = -1
 
-    /** Width of the screen available to fit the keyboard  */
-    private val allowedWidth: Int
-        get() {
-            val padding = theme.generalStyle.run {
-                if (context.isLandscapeMode()) keyboardPaddingLand else keyboardPadding
-            }
-
-            val safeWidth = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-                val windowMetrics = context.windowManager.maximumWindowMetrics
-                val insets = windowMetrics.windowInsets.getInsetsIgnoringVisibility(
-                    WindowInsets.Type.systemBars() or WindowInsets.Type.displayCutout(),
-                )
-                val displayWidth = context.resources.displayMetrics.widthPixels
-                val windowWidth = windowMetrics.bounds.width() - insets.left - insets.right
-                val isPortrait = displayWidth < context.resources.displayMetrics.heightPixels
-                if (isPortrait && windowWidth < displayWidth - context.dp(1)) {
-                    displayWidth
-                } else {
-                    windowWidth
-                }
-            } else {
-                @Suppress("DEPRECATION")
-                val size = Point()
-                @Suppress("DEPRECATION")
-                context.windowManager.defaultDisplay.getSize(size)
-                size.x
-            }
-            return safeWidth - 2 * context.dp(padding)
-        }
-
     /** Keyboard default ascii mode  */
     val asciiMode = selfConfig?.asciiMode ?: false
     val resetAsciiMode = selfConfig?.resetAsciiMode ?: true
@@ -149,6 +116,8 @@ class Keyboard(
             selfConfig?.let { getKeyboardHeightFromKeyboardConfig(it) } ?: 0,
             getKeyboardHeightFromTheme(theme),
         ).firstOrNull { it > 0 } ?: 0
+
+    private val expandKeypressArea: Boolean by AppPrefs.defaultInstance().keyboard.expandKeypressArea
 
     init {
 
@@ -189,7 +158,7 @@ class Keyboard(
 
                 // determine the width weight of this key
                 val keyWidthWeight =
-                    if (key.width == 0f && key.click.isNotEmpty()) keyboardKeyWidth else key.width
+                    if (key.width == 0f && key.hasClickAction) keyboardKeyWidth else key.width
 
                 val widthPx = (keyWidthWeight * allowedWidth / MAX_TOTAL_WEIGHT).toInt()
 
@@ -210,7 +179,7 @@ class Keyboard(
                 totalKeyWidth += keyWidthWeight
 
                 // only clickable keys count toward column count
-                if (key.click.isNotEmpty()) {
+                if (key.hasClickAction) {
                     column++
                 }
 
@@ -252,11 +221,13 @@ class Keyboard(
 
             minWidth = 0
 
+            val spacers = mutableListOf<Triple<Int, Int, Int>>()
+
             // create Key objects, assign position, size, offsets
             for (textKey in keys) {
 
                 val keyWidthWeight =
-                    if (textKey.width == 0f && textKey.click.isNotEmpty()) keyboardKeyWidth else textKey.width
+                    if (textKey.width == 0f && textKey.hasClickAction) keyboardKeyWidth else textKey.width
 
                 var widthPx = (keyWidthWeight * oneWeightWidthPx).toInt()
 
@@ -284,12 +255,13 @@ class Keyboard(
                     if (keyWidthWeight > 20f) {
                         widthPx += gap
                     } else {
+                        if (expandKeypressArea) spacers.add(Triple(xPos, gap, row))
                         xPos += gap
                     }
                 }
 
-                // spacer keys only move the cursor; no Key object is created
-                if (textKey.click.isEmpty()) {
+                if (!textKey.hasClickAction) {
+                    if (expandKeypressArea) spacers.add(Triple(xPos, widthPx, row))
                     xPos += widthPx
                     continue
                 }
@@ -323,6 +295,23 @@ class Keyboard(
 
                 if (xPos > minWidth) {
                     minWidth = xPos
+                }
+            }
+
+            // Expand keypress area to edge by distributing spacer widths to neighbors
+            if (expandKeypressArea && spacers.isNotEmpty()) {
+                for ((spacerX, spacerWidth, spacerRow) in spacers) {
+                    val (leftKeys, rightKeys) = mKeys.filter { it.row == spacerRow }.partition { it.x + it.width <= spacerX }
+                    val leftKey = leftKeys.maxByOrNull { it.x }
+                    val rightKey = rightKeys.minByOrNull { it.x }
+                    when {
+                        leftKey != null && rightKey != null -> {
+                            leftKey.extraWidthRight += spacerWidth / 2
+                            rightKey.extraWidthLeft += spacerWidth - spacerWidth / 2
+                        }
+                        leftKey != null -> leftKey.extraWidthRight += spacerWidth
+                        rightKey != null -> rightKey.extraWidthLeft += spacerWidth
+                    }
                 }
             }
 

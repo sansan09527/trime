@@ -48,7 +48,9 @@ class ButtonsBarUi(
             }
         }
     } else {
-        ToolButton(ctx, icon)
+        ToolButton(ctx, icon).apply {
+            setOnClickListener { onButtonClick?.invoke("") }
+        }
     }
 
     init {
@@ -75,7 +77,7 @@ class ButtonsBarUi(
         return finalWidth to finalHeight
     }
 
-    fun updateStyle() {
-        root.children.forEach { (it as ToolButton).updateStyle() }
+    fun updateStyle(option: String, enabled: Boolean) {
+        root.children.forEach { (it as ToolButton).updateStyle(option, enabled) }
     }
 }

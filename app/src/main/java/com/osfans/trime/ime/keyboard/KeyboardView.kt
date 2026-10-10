@@ -36,6 +36,9 @@ class KeyboardView(
     internal val keyLongTextSize = theme.generalStyle.keyLongTextSize.takeIf { it > 0 } ?: keyTextSize
     internal val symbolTextSize = theme.generalStyle.symbolTextSize.takeIf { it > 0 } ?: keyTextSize
     internal val popupOnKeyPress by AppPrefs.defaultInstance().keyboard.popupOnKeyPress
+    internal val hookShiftArrow: Boolean by AppPrefs.defaultInstance().keyboard.hookShiftArrow
+    internal val hideKeySymbol: Boolean by AppPrefs.defaultInstance().keyboard.hideKeySymbol
+    internal val hideKeyHint: Boolean by AppPrefs.defaultInstance().keyboard.hideKeyHint
 
     init {
         setWillNotDraw(false)
@@ -54,15 +57,16 @@ class KeyboardView(
     private fun createKeyView(index: Int, key: Key): KeyView = KeyView(context, key = key, keyboard = keyboard, keyboardView = this, keyboardActionListener = keyboardActionListener).apply {
         id = index
 
-        layoutParams = LayoutParams(key.width, key.height)
+        val totalWidth = key.width + key.extraWidthLeft + key.extraWidthRight
+        layoutParams = LayoutParams(totalWidth, key.height)
 
-        translationX = key.x.toFloat()
+        translationX = (key.x - key.extraWidthLeft).toFloat()
         translationY = key.y.toFloat()
 
         setPadding(
-            keyboard.horizontalGap / 2,
+            keyboard.horizontalGap / 2 + key.extraWidthLeft,
             keyboard.verticalGap / 2,
-            keyboard.horizontalGap / 2,
+            keyboard.horizontalGap / 2 + key.extraWidthRight,
             keyboard.verticalGap / 2,
         )
     }

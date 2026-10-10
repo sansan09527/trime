@@ -54,7 +54,6 @@ import splitties.views.dsl.core.add
 import splitties.views.dsl.core.imageView
 import splitties.views.dsl.core.matchParent
 import splitties.views.dsl.core.view
-import splitties.views.dsl.core.withTheme
 import splitties.views.dsl.core.wrapContent
 import splitties.views.imageDrawable
 
@@ -75,22 +74,24 @@ class InputView(
 
     private val leftPaddingSpace =
         view(::View) {
+            isFocusable = false
             setOnClickListener(placeholderListener)
         }
 
     private val rightPaddingSpace =
         view(::View) {
+            isFocusable = false
             setOnClickListener(placeholderListener)
         }
 
     private val bottomPaddingSpace =
         view(::View) {
+            isFocusable = false
             setOnClickListener(placeholderListener)
         }
 
     private val updateWindowViewHeightJob: Job
 
-    private val themedContext = context.withTheme(android.R.style.Theme_DeviceDefault_Settings)
     private val inputDepMgr = InputDependencyManager.initialize(this, themedContext, theme, service, rime)
     private val di = inputDepMgr.di
     private val broadcaster: InputBroadcaster by di.instance()
@@ -102,7 +103,6 @@ class InputView(
     private val keyboardWindow: KeyboardWindow by di.instance()
     private val liquidWindow: LiquidWindow by di.instance()
 
-    private val inlinePreeditMode by AppPrefs.defaultInstance().general.inlinePreeditMode
     private val candidatesMode by AppPrefs.defaultInstance().candidates.mode
 
     private val keyboardSidePadding = theme.generalStyle.keyboardPadding
@@ -266,6 +266,7 @@ class InputView(
                 endToStartOf(rightPaddingSpace)
             }
         }
+        preedit.ui.root.setPadding(sidePadding, 0, sidePadding, 0)
         inputBar.view.setPadding(sidePadding, 0, sidePadding, 0)
     }
 
@@ -317,16 +318,8 @@ class InputView(
                 }
                 broadcaster.onCompositionUpdate(data)
             }
-            is RimeMessage.CandidateMenuMessage -> {
-                broadcaster.onCandidateMenuUpdate(it.data)
-            }
-            is RimeMessage.CandidateListMessage -> {
-                val data = if (candidatesMode == PopupCandidatesMode.ALWAYS_SHOW) {
-                    RimeMessage.CandidateListMessage.Data()
-                } else {
-                    it.data
-                }
-                broadcaster.onCandidateListUpdate(data)
+            is RimeMessage.BulkCandidatesMessage -> {
+                broadcaster.onCandidateListUpdate(it.data)
             }
             else -> {}
         }
